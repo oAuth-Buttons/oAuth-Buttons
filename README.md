@@ -10,6 +10,7 @@ oAuth 서비스들의 로그인 버튼들입니다.
 ## 무엇이 지원되나요?
 
  * [네이버](https://developers.naver.com/docs/login/bi/)
+ * 플랫
 
 ## 어떻게 지원하나요?
 
@@ -19,4 +20,5 @@ oAuth 서비스들의 로그인 버튼들입니다.
 
 ## 출처 표기
 
-* 네이버 로고 - NAVER SQUARE IDENTITY의 로고를 분리함.
+* [네이버 로고](http://design.naver.com/viewContentsDetail?contentsId=22&barGubun=w) 일부 분리
+* [구글 로고](https://developers.google.com/identity/branding-guidelines)

@@ -1,0 +1,12 @@
+contents {
+    display: flex;
+    flex-direction: column;
+}
+
+div.buttons {
+    width: 80%;
+    flex: initial;
+    border: 1px solid #999999;
+    justify-content: center;
+    align-items: center;
+}

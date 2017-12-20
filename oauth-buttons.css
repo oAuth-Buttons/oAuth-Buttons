@@ -1,0 +1,95 @@
+.oauth-button .logo {
+    width: 64px;
+    flex: initial;
+    display: flex;
+    position: relative;
+    background-color: inherit;
+}
+
+.oauth-button .label {
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.oauth-button {
+    display: flex;
+    height: 64px;
+    flex: initial;
+    font-family: sans-serif;
+    margin: 10px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Full - Short - Logo - Logout */
+.oauth-button.full {
+    width: 300px;
+}
+
+.oauth-button.short {
+    width: 150px;
+}
+
+.oauth-button.logo {
+    width: 64px;
+}
+
+.oauth-button .label, .oauth-button .label {
+    display: none;
+}
+
+.oauth-button.short:not(.logout) .label.short {
+    display: flex;
+}
+
+.oauth-button.full:not(.logout) .label.full {
+    display: flex;
+}
+
+.oauth-button.logout .label.logout {
+    display: flex;
+}
+
+/* Theme */
+.oauth-button.naver-theme {
+    color: #ffffff;
+    background-color: #1ec800;
+    border-color: #1eb400;
+}
+.oauth-button.naver-white.naver-theme {
+    color: #1ec800;
+    background-color: #ffffff;
+}
+
+.oauth-button.google-theme {
+    background-color: #ea4335;
+    border-color: #d42616;
+}
+.oauth-button.naver-white.google-theme {
+    color: #ea4335;
+    background-color: #ffffff;
+}
+
+/* Predefined Logo */
+.oauth-button .logo.naver {
+    -webkit-mask: url(logo/naver.svg) no-repeat center;
+}
+.oauth-button .logo.naver.pure {
+    background-image: url(logo/naver.svg);
+    background-color: inherit;
+}
+
+.oauth-button .logo.google {
+    -webkit-mask: url(logo/google.svg) no-repeat center;
+}
+.oauth-button .logo.google.pure {
+    background-image: url(logo/google.svg);
+    background-color: inherit;
+}
+
+.oauth-button .logo:not(.pure) {
+    background-color: currentColor;
+}
