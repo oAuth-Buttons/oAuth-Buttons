@@ -56,6 +56,7 @@
 /* Theme */
 .oauth-button.naver-theme {
     color: #ffffff;
+    color: #ffffff;
     background-color: #1ec800;
     border-color: #1eb400;
 }
@@ -65,11 +66,22 @@
 }
 
 .oauth-button.google-theme {
+    color: #ffffff;
     background-color: #ea4335;
     border-color: #d42616;
 }
 .oauth-button.naver-white.google-theme {
     color: #ea4335;
+    background-color: #ffffff;
+}
+
+.oauth-button.kakao-theme {
+    color: #3c1e1e;
+    background-color: #ffeb00;
+    border-color: #ccbb00;
+}
+.oauth-button.naver-white.kakao-theme {
+    color: #3c1e1e;
     background-color: #ffffff;
 }
 
@@ -87,6 +99,14 @@
 }
 .oauth-button .logo.google.pure {
     background-image: url(logo/google.svg);
+    background-color: inherit;
+}
+
+.oauth-button .logo.kakao {
+    -webkit-mask: url(logo/kakao.svg) no-repeat center;
+}
+.oauth-button .logo.kakao.pure {
+    background-image: url(logo/kakao.svg);
     background-color: inherit;
 }
 

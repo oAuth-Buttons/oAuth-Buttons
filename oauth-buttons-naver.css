@@ -17,14 +17,9 @@
     flex-direction: row;
     border-style: solid;
     border-width: 1px;
-    color: #FFFFFF;
     font-family: '나눔바른고딕 Bold', sans-serif;
     font-size: 14pt;
     font-weight: 900;
-}
-
-.oauth-button.naver {
-    color: #ffffff;
 }
 
 .oauth-button.naver-white {

@@ -1,7 +1,3 @@
-.oauth-button.flat .label, .oauth-button.flat .logo {
-    color: #ffffff;
-}
-
 .oauth-button.flat {
     border-radius: 2px;
     flex-direction: row;
