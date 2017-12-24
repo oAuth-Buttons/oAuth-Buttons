@@ -71,9 +71,9 @@ function updateStyle(element) {
         let logo = element.getElementsByClassName('logo')[0]
         if (logo && theme.logo) {
             logo.style.flex = 'initial'
-            // logo.type = 'image/svg+xml'
-            // logo.data = theme.logo
-            // logo.style.height = logo.style.width = logo.height = logo.width = height
+            logo.type = 'image/svg+xml'
+            logo.data = theme.logo
+            logo.style.height = logo.style.width = logo.height = logo.width = height
         }
 
         let full = element.querySelector('.label.full')
@@ -112,7 +112,7 @@ function updateStyle(element) {
             if (k == 'logo-color') {
                 let svgDoc = logo.contentDocument
                 let styleElement = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style")
-                styleElement.textContent = `* { fill: ${guide[k]} !important; color: ${guide[k]}} !important`
+                styleElement.textContent = `* { fill: ${guide[k]} !important; color: ${guide[k]} !important;}`
                 svgDoc.getElementsByTagName("svg")[0].appendChild(styleElement)
                 console.log(svgDoc)
             } else {
