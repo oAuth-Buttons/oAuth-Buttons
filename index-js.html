@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>oAuth Buttons Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <div id="contents">
+        <div id="preamble">
+            본 사이트는 oAuth Buttons의 프리뷰를 보여주기 위한 사이트입니다.
+        </div>
+        <div id="oauth-buttons">
+            <div data-ob-guide="flat" data-ob-theme="naver" data-ob-full data-ob-height="64">
+                <object class="logo" type="image/svg+xml" data="logo/naver.svg" width="64" height="64"></object>
+                <p class="label full">
+                    네이버 아이디로 로그인
+                </p>
+                <p class="label short">
+                    로그인
+                </p>
+                <p class="label logout">
+                    로그아웃
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="oauth-buttons.js"></script>
+    <script>
+        window.onload = () => {
+            install({
+
+            })        
+        }
+    </script>
+</body>
+</html>
