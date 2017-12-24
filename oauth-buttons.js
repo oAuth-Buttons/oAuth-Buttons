@@ -85,7 +85,6 @@ function updateStyle(element) {
         full.style.display = 'none'
         short.style.display = 'none'
         logout.style.display = 'none'
-        console.log(attribute)
         if (attribute.full) {
             element.style.width = element.width = `${height * 5}px`
             if (!attribute.logout) {
@@ -114,7 +113,8 @@ function updateStyle(element) {
                 let svgDoc = logo.contentDocument
                 let styleElement = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style")
                 styleElement.textContent = `* { fill: ${guide[k]} !important; color: ${guide[k]}} !important`
-                svgDoc.getElementsByTagName("svg")[0].appendChild(styleElement);
+                svgDoc.getElementsByTagName("svg")[0].appendChild(styleElement)
+                console.log(svgDoc)
             } else {
                 element.style[k] = guide[k]
             }
@@ -149,7 +149,6 @@ function getAttribute(element) {
     let result = {}
     if (element.dataset) {
         let dataset = element.dataset
-        console.log(dataset)
         if (dataset.obFull !== undefined) {
             result.full = true
         }
