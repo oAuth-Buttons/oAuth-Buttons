@@ -71,9 +71,9 @@ function updateStyle(element) {
         let logo = element.getElementsByClassName('logo')[0]
         if (logo && theme.logo) {
             logo.style.flex = 'initial'
-            logo.type = 'image/svg+xml'
-            logo.data = theme.logo
-            logo.style.height = logo.style.width = logo.height = logo.width = height
+            // logo.type = 'image/svg+xml'
+            // logo.data = theme.logo
+            // logo.style.height = logo.style.width = logo.height = logo.width = height
         }
 
         let full = element.querySelector('.label.full')
