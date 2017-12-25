@@ -173,6 +173,6 @@ function ready(element, callback) {
     if (element.readyState !== "loading") {
         callback()
     } else {
-        element.addEventListener("DOMContentLoaded", callback)
+        element.onload = callback
     }
 }
