@@ -75,7 +75,7 @@ function updateStyle(element) {
             logo.style.height = logo.style.width = logo.height = logo.width = height
         }
 
-        ready(logo, () => {
+        logo.onload = () => {
             let full = element.querySelector('.label.full')
             let short = element.querySelector('.label.short')
             let logout = element.querySelector('.label.logout')
@@ -167,12 +167,4 @@ function getAttribute(element) {
         }
     }
     return result
-}
-
-function ready(element, callback) {
-    if (element.readyState !== "loading") {
-        callback()
-    } else {
-        element.onload = callback
-    }
 }
