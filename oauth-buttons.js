@@ -75,55 +75,57 @@ function updateStyle(element) {
             logo.style.height = logo.style.width = logo.height = logo.width = height
         }
 
-        let full = element.querySelector('.label.full')
-        let short = element.querySelector('.label.short')
-        let logout = element.querySelector('.label.logout')
+        ready(logo, () => {
+            let full = element.querySelector('.label.full')
+            let short = element.querySelector('.label.short')
+            let logout = element.querySelector('.label.logout')
 
-        element.style.height = `${height}px`
+            element.style.height = `${height}px`
 
-        full.style.display = 'none'
-        short.style.display = 'none'
-        logout.style.display = 'none'
-        if (attribute.full) {
-            element.style.width = element.width = `${height * 5}px`
-            if (!attribute.logout) {
-                full.style.display = 'flex'
-            }
-        } else if (attribute.short) {
-            element.style.width = element.width = `${height * 2.5}px`
-            if (!attribute.logout) {
-                short.style.display = 'flex'
-            }
-        }
-        if (attribute.logout) {
-            logout.style.display = 'flex'
-        }
-
-        for (let [k, v] of Object.entries(theme)) {
-            if (v && typeof v == 'string' && v[0] == '$') {
-                theme[k] = theme[v.substring(1)]
-            }
-        }
-        for (let [k, v] of Object.entries(guide)) {
-            if (v && typeof v == 'string' && v[0] == '$') {
-                guide[k] = theme[v.substring(1)]
-            }
-            if (k == 'logo-color') {
-                let svgDoc = logo.contentDocument
-                let targets = svgDoc.querySelectorAll('.logo')
-                for (target of targets) {
-                    target.setAttribute('fill', guide[k])
+            full.style.display = 'none'
+            short.style.display = 'none'
+            logout.style.display = 'none'
+            if (attribute.full) {
+                element.style.width = element.width = `${height * 5}px`
+                if (!attribute.logout) {
+                    full.style.display = 'flex'
                 }
-            } else if (k == 'logo-background') {
-                let svgDoc = logo.contentDocument
-                let targets = svgDoc.querySelectorAll('.background')
-                for (target of targets) {
-                    target.setAttribute('fill', guide[k])
+            } else if (attribute.short) {
+                element.style.width = element.width = `${height * 2.5}px`
+                if (!attribute.logout) {
+                    short.style.display = 'flex'
                 }
-            } else {
-                element.style[k] = guide[k]
             }
-        }
+            if (attribute.logout) {
+                logout.style.display = 'flex'
+            }
+
+            for (let [k, v] of Object.entries(theme)) {
+                if (v && typeof v == 'string' && v[0] == '$') {
+                    theme[k] = theme[v.substring(1)]
+                }
+            }
+            for (let [k, v] of Object.entries(guide)) {
+                if (v && typeof v == 'string' && v[0] == '$') {
+                    guide[k] = theme[v.substring(1)]
+                }
+                if (k == 'logo-color') {
+                    let svgDoc = logo.contentDocument
+                    let targets = svgDoc.querySelectorAll('.logo')
+                    for (target of targets) {
+                        target.setAttribute('fill', guide[k])
+                    }
+                } else if (k == 'logo-background') {
+                    let svgDoc = logo.contentDocument
+                    let targets = svgDoc.querySelectorAll('.background')
+                    for (target of targets) {
+                        target.setAttribute('fill', guide[k])
+                    }
+                } else {
+                    element.style[k] = guide[k]
+                }
+            }
+        })
     }
 }
 
@@ -165,4 +167,12 @@ function getAttribute(element) {
         }
     }
     return result
+}
+
+function ready(element, callback) {
+    if (element.readyState !== "loading") {
+        callback()
+    } else {
+        document.addEventListener("DOMContentLoaded", callback)
+    }
 }
