@@ -1,4 +1,34 @@
-.oauth-button .logo {
+.lbtn {
+    flex-direction: row;
+    font-size: 14pt;
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    height: 64px;
+    flex: initial;
+    font-family: '나눔바른고딕 Bold', 'Roboto', sans-serif;
+    margin: 10px;
+    width: 300px;
+}
+
+.lbtn.lbtn-flat {
+    border-radius: 2px;
+    flex-direction: row;
+    font-family: '나눔바른고딕 Bold', 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+.lbtn.short {
+    width: 150px;
+}
+
+.lbtn.full {
+    width: 300px;
+}
+
+.lbtn .logo {
     width: 64px;
     flex: initial;
     display: flex;
@@ -6,110 +36,122 @@
     background-color: inherit;
 }
 
-.oauth-button .label {
+.lbtn .label {
     text-align: center;
     flex: 1;
     margin: 0;
     align-items: center;
     justify-content: center;
-}
-
-.oauth-button {
+    border-left: 1px solid;
     display: flex;
-    height: 64px;
-    flex: initial;
-    font-family: sans-serif;
-    margin: 10px;
-    color: #ffffff;
-    background-color: #000000;
+    border-color: inherit;
 }
 
-/* Full - Short - Logo - Logout */
-.oauth-button.full {
-    width: 300px;
+.lbtn.lbtn-flat .label {
+    border-left: none;
 }
 
-.oauth-button.short {
-    width: 150px;
-}
-
-.oauth-button.logo {
+.lbtn.logo-only {
     width: 64px;
 }
 
-.oauth-button .label, .oauth-button .label {
-    display: none;
-}
-
-.oauth-button.short:not(.logout) .label.short {
-    display: flex;
-}
-
-.oauth-button.full:not(.logout) .label.full {
-    display: flex;
-}
-
-.oauth-button.logout .label.logout {
-    display: flex;
-}
-
-/* Theme */
-.oauth-button.naver-theme {
-    color: #ffffff;
+/* theme */
+.lbtn.lbtn-naver {
     color: #ffffff;
     background-color: #1ec800;
     border-color: #1eb400;
 }
-.oauth-button.naver-white.naver-theme {
+
+.lbtn.lbtn-naver-white {
     color: #1ec800;
     background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+.lbtn.lbtn-naver-white .label {
+    color: #999;
+    border-color: inherit;
 }
 
-.oauth-button.google-theme {
+.lbtn.lbtn-google {
     color: #ffffff;
     background-color: #ea4335;
     border-color: #d42616;
 }
-.oauth-button.naver-white.google-theme {
+.lbtn.lbtn-google-white {
     color: #ea4335;
     background-color: #ffffff;
+    border-color: #d7d7d7;
 }
 
-.oauth-button.kakao-theme {
+.lbtn.lbtn-kakao {
     color: #3c1e1e;
     background-color: #ffeb00;
     border-color: #ccbb00;
 }
-.oauth-button.naver-white.kakao-theme {
+
+.lbtn.lbtn-kakao-white {
     color: #3c1e1e;
     background-color: #ffffff;
+    border-color: #d7d7d7;
 }
 
-/* Predefined Logo */
-.oauth-button .logo.naver {
+.lbtn.lbtn-facebook {
+    color: #ffffff;
+    background-color: #3c5a99;
+    border-color: #3c4a99;
+}
+.lbtn.lbtn-facebook-white {
+    color: #3c5a99;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+.lbtn.lbtn-twitter {
+    color: #ffffff;
+    background-color: #1da1f2;
+    border-color: #1d91f2;
+}
+.lbtn.lbtn-twitter-white {
+    color: #1da1f2;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+/* logo */
+.lbtn.lbtn-naver .logo {
     -webkit-mask: url(logo/naver.svg) no-repeat center;
 }
-.oauth-button .logo.naver.pure {
-    background-image: url(logo/naver.svg);
-    background-color: inherit;
+.lbtn.lbtn-naver-white .logo {
+    -webkit-mask: url(logo/naver.svg) no-repeat center;
 }
 
-.oauth-button .logo.google {
+.lbtn.lbtn-google .logo {
     -webkit-mask: url(logo/google.svg) no-repeat center;
 }
-.oauth-button .logo.google.pure {
-    background-image: url(logo/google.svg);
-    background-color: inherit;
+.lbtn.lbtn-google-white .logo {
+    -webkit-mask: url(logo/google.svg) no-repeat center;
 }
 
-.oauth-button .logo.kakao {
+.lbtn.lbtn-kakao .logo{
     -webkit-mask: url(logo/kakao.svg) no-repeat center;
 }
-.oauth-button .logo.kakao.pure {
-    background-image: url(logo/kakao.svg);
-    background-color: inherit;
+.lbtn.lbtn-kakao-white .logo {
+    -webkit-mask: url(logo/kakao.svg) no-repeat center;
 }
 
-.oauth-button .logo:not(.pure) {
+.lbtn.lbtn-facebook .logo {
+    -webkit-mask: url(logo/facebook.svg) no-repeat center;
+}
+.lbtn.lbtn-facebook-white .logo {
+    -webkit-mask: url(logo/facebook.svg) no-repeat center;
+}
+
+.lbtn.lbtn-twitter .logo {
+    -webkit-mask: url(logo/twitter.svg) no-repeat center;
+}
+.lbtn.lbtn-twitter-white .logo {
+    -webkit-mask: url(logo/twitter.svg) no-repeat center;
+}
+
+.lbtn .logo {
     background-color: currentColor;
 }

@@ -3,6 +3,5 @@
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink" 
     xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="-120 -120 500 500">
-    <rect class="background" fill="#3c5a99" width="266.89" height="266.89" rx="14.73" ry="14.73"/>
     <path class="logo" fill="white" d="M307.7,379.45V276.09H342.4l5.19-40.28H307.7V210.1c0-11.66,3.24-19.61,20-19.61H349v-36a285.42,285.42,0,0,0-31.08-1.59c-30.75,0-51.81,18.77-51.81,53.24v29.71H231.33v40.28h34.78V379.45Z" transform="translate(-123.55 -112.55)"/>
 </svg>
