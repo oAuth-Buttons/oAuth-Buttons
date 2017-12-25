@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-github {
+    color: #ffffff;
+    background-color: #1a1414;
+    border-color: #181516;
+}
+.lbtn.lbtn-github.white {
+    color: #1a1414;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-github .logo {
+    -webkit-mask: url(../logo/github.svg) no-repeat center;
+}
