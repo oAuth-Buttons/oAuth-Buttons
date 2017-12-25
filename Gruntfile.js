@@ -15,14 +15,17 @@ module.exports = (grunt) => {
                 }]
             }
         },
-        concat_css:{
-            all: {
-              src: ['src/css/main.css', 'src/css/service/*.css'],
-              dest: 'dist/css/oauth-buttons.css'
+        concat:{
+            options: {
+                sourceMap: true
             },
-          },
-          copy: {
-            main: {
+            concat: {
+                src: ['src/css/main.css', 'src/css/service/*.css'],
+                dest: 'dist/css/oauth-buttons.css'
+            }
+        },
+        copy: {
+            copy: {
               files: [{
                     expand: true,
                     cwd: 'src/logo',
@@ -30,12 +33,13 @@ module.exports = (grunt) => {
                     dest: 'dist/logo',
                 }],
             },
-          },
+        }
     });
 
-    grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-webfont');
 
-    grunt.registerTask('default', ['concat_css', 'cssmin', 'copy']);
+    grunt.registerTask('default', ['concat', 'copy', /*'webfont', */'cssmin']);
 }
