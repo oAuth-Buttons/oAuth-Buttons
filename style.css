@@ -1,3 +1,4 @@
+@charset "UTF-8";
 contents {
     display: flex;
     flex-direction: column;
@@ -9,4 +10,37 @@ div.buttons {
     border: 1px solid #999999;
     justify-content: center;
     align-items: center;
+}
+
+#update {
+    color: white;
+    background-color: #48e;
+    font-family: '나눔바른고딕', 'NanumBarunGothic', 'Roboto', sans-serif;
+    display: block;
+    outline: none;
+    border-radius: 8px;
+    border-style: none;
+    flex: initial;
+    display: flex;
+    width: 150px;
+    height: 64px;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#update:hover {
+    background-color: #156ae9;
+}
+#update:active {
+    background-color: #1155ba;
+}
+
+input {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    flex: initial;
+    margin: 10px;
 }
