@@ -6,6 +6,6 @@
         }
     </style>
 </defs>
-<polygon class="kakao" points="45 140 40 185 90 150 45 140"/>
-<ellipse class="kakao" cx="100" cy="80" rx="100" ry="80"/>
+<polygon class="kakao logo" points="45 140 40 185 90 150 45 140"/>
+<ellipse class="kakao logo" cx="100" cy="80" rx="100" ry="80"/>
 </svg>
