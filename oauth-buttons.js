@@ -112,13 +112,13 @@ function updateStyle(element) {
                 let svgDoc = logo.contentDocument
                 let targets = svgDoc.querySelectorAll('.logo')
                 for (target of targets) {
-                    targets.setAttribute('fill', `#${guide[k]}`)
+                    target.setAttribute('fill', `#${guide[k]}`)
                 }
             } else if (k == 'logo-background') {
                 let svgDoc = logo.contentDocument
                 let targets = svgDoc.querySelectorAll('.background')
                 for (target of targets) {
-                    targets.setAttribute('fill', `#${guide[k]} !important`)
+                    target.setAttribute('fill', `#${guide[k]} !important`)
                 }
             } else {
                 element.style[k] = guide[k]
