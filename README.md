@@ -27,4 +27,5 @@ oAuth 서비스들의 로그인 버튼들입니다.
 * [네이버 로고](http://design.naver.com/viewContentsDetail?contentsId=22&barGubun=w) 일부 분리
 * [구글 로고](https://developers.google.com/identity/branding-guidelines)
 * [페이스북 로고](https://ko-kr.facebookbrand.com/assets/f-%EB%A1%9C%EA%B3%A0-2)
+* [트위터 로고](https://about.twitter.com/ko/company/brand-resources.html)
 
