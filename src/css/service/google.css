@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-google {
+    color: #ffffff;
+    background-color: #ea4335;
+    border-color: #d3554a;
+}
+.lbtn.lbtn-google.white {
+    color: #ea4335;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-google .logo {
+    -webkit-mask: url(../logo/google.svg) no-repeat center;
+}

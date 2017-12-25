@@ -1,0 +1,26 @@
+{
+  "name": "oauth-buttons",
+  "version": "1.0.0",
+  "description": "oAuth 서비스들의 로그인 버튼들입니다.",
+  "main": "oauth-buttons.js",
+  "scripts": {
+    "build": "grunt --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RanolP/oAuth-Buttons.git"
+  },
+  "author": "Ranol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RanolP/oAuth-Buttons/issues"
+  },
+  "homepage": "https://github.com/RanolP/oAuth-Buttons#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concat-css": "^0.3.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1"
+  }
+}

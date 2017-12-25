@@ -1,0 +1,21 @@
+/* theme */
+.lbtn.lbtn-naver {
+    color: #ffffff;
+    background-color: #1ec800;
+    border-color: #29a011;
+}
+
+.lbtn.lbtn-naver.white {
+    color: #1ec800;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+.lbtn.lbtn-naver.white .label {
+    color: #999;
+    border-color: inherit;
+}
+
+/* logo */
+.lbtn.lbtn-naver .logo {
+    -webkit-mask: url(../logo/naver.svg) no-repeat center;
+}

@@ -1,0 +1,21 @@
+/* theme */
+.lbtn.lbtn-instagram {
+    color: #ffffff;
+    background-color: #e53c5c;
+    border-color: #ce536a;
+}
+
+.lbtn.lbtn-instagram:not(.short) {
+    font-size: 12pt;
+}
+
+.lbtn.lbtn-instagram.white {
+    color: #e53c5c;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-instagram .logo {
+    -webkit-mask: url(../logo/instagram.svg) no-repeat center;
+}

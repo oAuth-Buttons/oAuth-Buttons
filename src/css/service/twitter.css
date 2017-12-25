@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-twitter {
+    color: #ffffff;
+    background-color: #1da1f2;
+    border-color: #349ad9;
+}
+.lbtn.lbtn-twitter.white {
+    color: #1da1f2;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-twitter .logo {
+    -webkit-mask: url(../logo/twitter.svg) no-repeat center;
+}

@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-discord {
+    color: #ffffff;
+    background-color: #7289DA;
+    border-color: #8392c7;
+}
+.lbtn.lbtn-discord.white {
+    color: #7289DA;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-discord .logo {
+    -webkit-mask: url(../logo/discord.svg) no-repeat center;
+}
