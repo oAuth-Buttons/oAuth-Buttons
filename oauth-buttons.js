@@ -4,9 +4,7 @@ function install(options) {
     window.guides = {}
 
     installTheme('default', {
-        'brand-color': '#000000',
-        'text-color': undefined,
-        'logo-color': undefined
+        'brand-color': '#000000'
     })
     installTheme('naver', {
         'brand-color': '#1ec800',
@@ -32,8 +30,9 @@ function install(options) {
         'background-color': '$brand-color',
         'color': 'white',
         'logo-color': 'white',
+        'logo-background': 'transparent',
         'font-size': '1.5em',
-        'font-family': '\'나눔바른고딕\', \'NanumBarunGothic\', \'Noto Sans\', \'Roboto\', sans-serif'
+        'font-family': "'나눔바른고딕', 'NanumBarunGothic', 'Noto Sans', 'Roboto', sans-serif"
     })
 
     applyStyle()
@@ -111,10 +110,16 @@ function updateStyle(element) {
             }
             if (k == 'logo-color') {
                 let svgDoc = logo.contentDocument
-                let styleElement = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style")
-                styleElement.textContent = `* { fill: ${guide[k]} !important; color: ${guide[k]} !important;}`
-                console.log(svgDoc)
-                svgDoc.getElementsByTagName("svg")[0].appendChild(styleElement)
+                let targets = svgDoc.querySelector('.logo')
+                for (target of targets) {
+                    targets.setAttribute('fill', `#${guide[k]}`)
+                }
+            } else if (k == 'logo-background') {
+                let svgDoc = logo.contentDocument
+                let targets = svgDoc.querySelector('.background')
+                for (target of targets) {
+                    targets.setAttribute('fill', `#${guide[k]} !important`)
+                }
             } else {
                 element.style[k] = guide[k]
             }
