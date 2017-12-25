@@ -47,15 +47,17 @@
             let logout = document.getElementById('logout')
             let logout_ = document.querySelector('.label.logout')
 
-            full.addEventListener('change', () => {
-                full_.innerHTML = full.value
-            })
-            short.addEventListener('change', () => {
-                short_.innerHTML = short.value
-            })
-            logout.addEventListener('change', () => {
-                logout_.innerHTML = logout.value
-            })
+            full.onchange = () => {
+                full_.innerText = full.value
+            }
+            short.onchange = () => {
+                short_.innerText = short.value
+            }
+            logout.onchange = () => {
+                logout_.innerText = logout.value
+            }
+
+            
             install({
 
             })
