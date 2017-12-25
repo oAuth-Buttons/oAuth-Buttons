@@ -59,15 +59,15 @@
 .lbtn.lbtn-naver {
     color: #ffffff;
     background-color: #1ec800;
-    border-color: #1eb400;
+    border-color: #29a011;
 }
 
-.lbtn.lbtn-naver-white {
+.lbtn.lbtn-naver.white {
     color: #1ec800;
     background-color: #ffffff;
     border-color: #d7d7d7;
 }
-.lbtn.lbtn-naver-white .label {
+.lbtn.lbtn-naver.white .label {
     color: #999;
     border-color: inherit;
 }
@@ -75,9 +75,9 @@
 .lbtn.lbtn-google {
     color: #ffffff;
     background-color: #ea4335;
-    border-color: #d42616;
+    border-color: #d3554a;
 }
-.lbtn.lbtn-google-white {
+.lbtn.lbtn-google.white {
     color: #ea4335;
     background-color: #ffffff;
     border-color: #d7d7d7;
@@ -86,10 +86,10 @@
 .lbtn.lbtn-kakao {
     color: #3c1e1e;
     background-color: #ffeb00;
-    border-color: #ccbb00;
+    border-color: #e5d419;
 }
 
-.lbtn.lbtn-kakao-white {
+.lbtn.lbtn-kakao.white {
     color: #3c1e1e;
     background-color: #ffffff;
     border-color: #d7d7d7;
@@ -98,9 +98,9 @@
 .lbtn.lbtn-facebook {
     color: #ffffff;
     background-color: #3c5a99;
-    border-color: #3c4a99;
+    border-color: #516184;
 }
-.lbtn.lbtn-facebook-white {
+.lbtn.lbtn-facebook.white {
     color: #3c5a99;
     background-color: #ffffff;
     border-color: #d7d7d7;
@@ -109,9 +109,9 @@
 .lbtn.lbtn-twitter {
     color: #ffffff;
     background-color: #1da1f2;
-    border-color: #1d91f2;
+    border-color: #349ad9;
 }
-.lbtn.lbtn-twitter-white {
+.lbtn.lbtn-twitter.white {
     color: #1da1f2;
     background-color: #ffffff;
     border-color: #d7d7d7;
@@ -120,54 +120,55 @@
 .lbtn.lbtn-github {
     color: #ffffff;
     background-color: #1a1414;
-    border-color: #1a1314;
+    border-color: #181516;
 }
-.lbtn.lbtn-github-white {
+.lbtn.lbtn-github.white {
     color: #1a1414;
     background-color: #ffffff;
     border-color: #d7d7d7;
 }
+
+.lbtn.lbtn-discord {
+    color: #ffffff;
+    background-color: #7289DA;
+    border-color: #8392c7;
+}
+.lbtn.lbtn-discord.white {
+    color: #7289DA;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+.lbtn.lbtn-discord.gray {
+    color: #ffffff;
+    background-color: #2C2F33;
+    border-color: #2f3031;
+}
 /* logo */
 .lbtn.lbtn-naver .logo {
-    -webkit-mask: url(logo/naver.svg) no-repeat center;
-}
-.lbtn.lbtn-naver-white .logo {
     -webkit-mask: url(logo/naver.svg) no-repeat center;
 }
 
 .lbtn.lbtn-google .logo {
     -webkit-mask: url(logo/google.svg) no-repeat center;
 }
-.lbtn.lbtn-google-white .logo {
-    -webkit-mask: url(logo/google.svg) no-repeat center;
-}
 
 .lbtn.lbtn-kakao .logo{
-    -webkit-mask: url(logo/kakao.svg) no-repeat center;
-}
-.lbtn.lbtn-kakao-white .logo {
     -webkit-mask: url(logo/kakao.svg) no-repeat center;
 }
 
 .lbtn.lbtn-facebook .logo {
     -webkit-mask: url(logo/facebook.svg) no-repeat center;
 }
-.lbtn.lbtn-facebook-white .logo {
-    -webkit-mask: url(logo/facebook.svg) no-repeat center;
-}
 
 .lbtn.lbtn-twitter .logo {
     -webkit-mask: url(logo/twitter.svg) no-repeat center;
 }
-.lbtn.lbtn-twitter-white .logo {
-    -webkit-mask: url(logo/twitter.svg) no-repeat center;
-}
-
 .lbtn.lbtn-github .logo {
     -webkit-mask: url(logo/github.svg) no-repeat center;
 }
-.lbtn.lbtn-github-white .logo {
-    -webkit-mask: url(logo/github.svg) no-repeat center;
+
+.lbtn.lbtn-discord .logo {
+    -webkit-mask: url(logo/discord.svg) no-repeat center;
 }
 
 .lbtn .logo {
