@@ -110,13 +110,13 @@ function updateStyle(element) {
             }
             if (k == 'logo-color') {
                 let svgDoc = logo.contentDocument
-                let targets = svgDoc.querySelector('.logo')
+                let targets = svgDoc.querySelectorAll('.logo')
                 for (target of targets) {
                     targets.setAttribute('fill', `#${guide[k]}`)
                 }
             } else if (k == 'logo-background') {
                 let svgDoc = logo.contentDocument
-                let targets = svgDoc.querySelector('.background')
+                let targets = svgDoc.querySelectorAll('.background')
                 for (target of targets) {
                     targets.setAttribute('fill', `#${guide[k]} !important`)
                 }
