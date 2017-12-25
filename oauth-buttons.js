@@ -125,7 +125,7 @@ function updateStyle(element) {
                     element.style[k] = guide[k]
                 }
             }
-        })
+        }
     }
 }
 
