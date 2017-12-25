@@ -131,6 +131,10 @@
     border-color: #ce536a;
 }
 
+.lbtn.lbtn-instagram:not(.short) {
+    font-size: 12pt;
+}
+
 .lbtn.lbtn-instagram.white {
     color: #e53c5c;
     background-color: #ffffff;
