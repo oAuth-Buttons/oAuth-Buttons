@@ -116,6 +116,17 @@
     background-color: #ffffff;
     border-color: #d7d7d7;
 }
+
+.lbtn.lbtn-github {
+    color: #ffffff;
+    background-color: #1a1414;
+    border-color: #1a1314;
+}
+.lbtn.lbtn-github-white {
+    color: #1a1414;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
 /* logo */
 .lbtn.lbtn-naver .logo {
     -webkit-mask: url(logo/naver.svg) no-repeat center;
@@ -150,6 +161,13 @@
 }
 .lbtn.lbtn-twitter-white .logo {
     -webkit-mask: url(logo/twitter.svg) no-repeat center;
+}
+
+.lbtn.lbtn-github .logo {
+    -webkit-mask: url(logo/github.svg) no-repeat center;
+}
+.lbtn.lbtn-github-white .logo {
+    -webkit-mask: url(logo/github.svg) no-repeat center;
 }
 
 .lbtn .logo {
