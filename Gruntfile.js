@@ -41,5 +41,5 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-webfont');
 
-    grunt.registerTask('default', ['concat', 'copy', /*'webfont', */'cssmin']);
+    grunt.registerTask('default', ['concat', 'copy', 'cssmin']);
 }
