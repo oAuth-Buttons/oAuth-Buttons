@@ -17,5 +17,8 @@
 
 /* logo */
 .lbtn.lbtn-instagram .logo {
-    -webkit-mask: url(../logo/instagram.svg) no-repeat center;
+    background: url(../logo/instagram.svg);
+}
+.lbtn.lbtn-instagram.lbtn-fallback .logo {
+    background: url(../logo/instagram.png);
 }

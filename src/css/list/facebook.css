@@ -12,5 +12,8 @@
 
 /* logo */
 .lbtn.lbtn-facebook .logo {
-    -webkit-mask: url(../logo/facebook.svg) no-repeat center;
+    background: url(../logo/facebook.svg);
+}
+.lbtn.lbtn-facebook.lbtn-fallback .logo {
+    background: url(../logo/facebook.png);
 }
