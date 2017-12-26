@@ -14,7 +14,7 @@
 .lbtn.lbtn-kakao .logo {
     background: url(../logo/kakao.svg);
 }
-.lbtn.lbtn-kakao.lbtn-fallback .logo {
+.lbtn.lbtn-kakao.lbtn-fallback-svg .logo {
     background: url(../logo/kakao.png);
 }
 

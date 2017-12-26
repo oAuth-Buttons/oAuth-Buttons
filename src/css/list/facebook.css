@@ -14,6 +14,6 @@
 .lbtn.lbtn-facebook .logo {
     background: url(../logo/facebook.svg);
 }
-.lbtn.lbtn-facebook.lbtn-fallback .logo {
+.lbtn.lbtn-facebook.lbtn-fallback-svg .logo {
     background: url(../logo/facebook.png);
 }

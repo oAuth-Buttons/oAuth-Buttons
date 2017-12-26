@@ -49,6 +49,36 @@ module.exports = (grunt) => {
                     dest: 'dist/logo'
                 }]
             }
+        },
+        babel: {
+            options: {
+                sourceMap: true,
+                presets: ['es2015']
+            },
+            js: {
+                files: {
+                    'dist/js/oauth-buttons.js': 'src/js/oauth-buttons.js'
+                }
+            },
+            modernizr: {
+                files: {
+                    'dist/js/modernizr-oauth-buttons.min.js': 'src/js/modernizr-oauth-buttons.min.js'
+                }
+            }
+        },
+        uglify: {
+            options: {
+                sourceMap: true
+            },
+            js: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/js',
+                    src: ['*.js','!*.min.js'],
+                    dest: 'dist/js',
+                    ext: '.min.js'
+                  }]
+            }
         }
     });
 
@@ -56,6 +86,8 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-svgo');
     grunt.loadNpmTasks('grunt-convert-svg-to-png');
+    grunt.loadNpmTasks('grunt-babel');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['concat', 'svgo', 'convert-svg-to-png', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'babel', 'svgo', 'convert-svg-to-png', 'cssmin', 'uglify']);
 }

@@ -57,10 +57,6 @@
     width: 64px;
 }
 
-.lbtn .logo {
-    background-color: currentColor;
-}
-
 .lbtn:not(.white) .logo{
     filter: brightness(0%) invert(100%);
 }

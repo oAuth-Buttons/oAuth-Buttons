@@ -14,6 +14,6 @@
 .lbtn.lbtn-twitter .logo {
     background: url(../logo/twitter.svg);
 }
-.lbtn.lbtn-twitter.lbtn-fallback .logo {
+.lbtn.lbtn-twitter.lbtn-fallback-svg .logo {
     background: url(../logo/twitter.png);
 }

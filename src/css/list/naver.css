@@ -19,6 +19,6 @@
 .lbtn.lbtn-naver .logo {
     background: url(../logo/naver.svg);
 }
-.lbtn.lbtn-naver.lbtn-fallback .logo {
+.lbtn.lbtn-naver.lbtn-fallback-svg .logo {
     background: url(../logo/naver.png);
 }

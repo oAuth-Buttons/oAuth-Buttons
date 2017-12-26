@@ -15,6 +15,6 @@
 .lbtn.lbtn-linkedin .logo {
     background: url(../logo/linkedin.svg);
 }
-.lbtn.lbtn-linkedin.lbtn-fallback .logo {
+.lbtn.lbtn-linkedin.lbtn-fallback-svg .logo {
     background: url(../logo/linkedin.png);
 }

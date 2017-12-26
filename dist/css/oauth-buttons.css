@@ -57,10 +57,6 @@
     width: 64px;
 }
 
-.lbtn .logo {
-    background-color: currentColor;
-}
-
 .lbtn:not(.white) .logo{
     filter: brightness(0%) invert(100%);
 }
@@ -80,7 +76,7 @@
 .lbtn.lbtn-discord .logo {
     background: url(../logo/discord.svg);
 }
-.lbtn.lbtn-discord.lbtn-fallback .logo {
+.lbtn.lbtn-discord.lbtn-fallback-svg .logo {
     background: url(../logo/discord.png);
 }
 /* theme */
@@ -99,7 +95,7 @@
 .lbtn.lbtn-facebook .logo {
     background: url(../logo/facebook.svg);
 }
-.lbtn.lbtn-facebook.lbtn-fallback .logo {
+.lbtn.lbtn-facebook.lbtn-fallback-svg .logo {
     background: url(../logo/facebook.png);
 }
 /* theme */
@@ -118,7 +114,7 @@
 .lbtn.lbtn-github .logo {
     background: url(../logo/github.svg);
 }
-.lbtn.lbtn-github.lbtn-fallback .logo {
+.lbtn.lbtn-github.lbtn-fallback-svg .logo {
     background: url(../logo/github.png);
 }
 /* theme */
@@ -137,7 +133,7 @@
 .lbtn.lbtn-google .logo {
     background: url(../logo/google.svg);
 }
-.lbtn.lbtn-google.lbtn-fallback .logo {
+.lbtn.lbtn-google.lbtn-fallback-svg .logo {
     background: url(../logo/google.png);
 }
 /* theme */
@@ -161,7 +157,7 @@
 .lbtn.lbtn-instagram .logo {
     background: url(../logo/instagram.svg);
 }
-.lbtn.lbtn-instagram.lbtn-fallback .logo {
+.lbtn.lbtn-instagram.lbtn-fallback-svg .logo {
     background: url(../logo/instagram.png);
 }
 /* theme */
@@ -180,7 +176,7 @@
 .lbtn.lbtn-kakao .logo {
     background: url(../logo/kakao.svg);
 }
-.lbtn.lbtn-kakao.lbtn-fallback .logo {
+.lbtn.lbtn-kakao.lbtn-fallback-svg .logo {
     background: url(../logo/kakao.png);
 }
 
@@ -205,7 +201,7 @@
 .lbtn.lbtn-linkedin .logo {
     background: url(../logo/linkedin.svg);
 }
-.lbtn.lbtn-linkedin.lbtn-fallback .logo {
+.lbtn.lbtn-linkedin.lbtn-fallback-svg .logo {
     background: url(../logo/linkedin.png);
 }
 /* theme */
@@ -229,7 +225,7 @@
 .lbtn.lbtn-naver .logo {
     background: url(../logo/naver.svg);
 }
-.lbtn.lbtn-naver.lbtn-fallback .logo {
+.lbtn.lbtn-naver.lbtn-fallback-svg .logo {
     background: url(../logo/naver.png);
 }
 /* theme */
@@ -249,7 +245,7 @@
 .lbtn.lbtn-slack .logo {
     background: url(../logo/slack.svg);
 }
-.lbtn.lbtn-slack.lbtn-fallback .logo {
+.lbtn.lbtn-slack.lbtn-fallback-svg .logo {
     background: url(../logo/slack.png);
 }
 /* theme */
@@ -268,7 +264,7 @@
 .lbtn.lbtn-steam .logo {
     background: url(../logo/steam.svg);
 }
-.lbtn.lbtn-steam.lbtn-fallback .logo {
+.lbtn.lbtn-steam.lbtn-fallback-svg .logo {
     background: url(../logo/steam.png);
 }
 /* theme */
@@ -287,7 +283,7 @@
 .lbtn.lbtn-twitch .logo {
     background: url(../logo/twitch.svg);
 }
-.lbtn.lbtn-twitch.lbtn-fallback .logo {
+.lbtn.lbtn-twitch.lbtn-fallback-svg .logo {
     background: url(../logo/twitch.png);
 }
 /* theme */
@@ -306,7 +302,7 @@
 .lbtn.lbtn-twitter .logo {
     background: url(../logo/twitter.svg);
 }
-.lbtn.lbtn-twitter.lbtn-fallback .logo {
+.lbtn.lbtn-twitter.lbtn-fallback-svg .logo {
     background: url(../logo/twitter.png);
 }
 /*# sourceMappingURL=oauth-buttons.css.map */

@@ -15,6 +15,6 @@
 .lbtn.lbtn-slack .logo {
     background: url(../logo/slack.svg);
 }
-.lbtn.lbtn-slack.lbtn-fallback .logo {
+.lbtn.lbtn-slack.lbtn-fallback-svg .logo {
     background: url(../logo/slack.png);
 }
