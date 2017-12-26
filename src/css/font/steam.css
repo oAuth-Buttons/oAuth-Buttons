@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-steam {
+    color: #ffffff;
+    background-color: #221e1f;
+    border-color: #212121;
+}
+.lbtn.lbtn-steam.white {
+    color: #221e1f;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-steam .logo:before {
+    content: "\e913";
+}

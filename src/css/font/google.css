@@ -1,0 +1,25 @@
+/* theme */
+.lbtn.lbtn-google {
+    color: #ffffff;
+    background-color: #ea4335;
+    border-color: #d3554a;
+}
+.lbtn.lbtn-google.white {
+    color: #ea4335;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-google .logo:before {
+    content: "\e903";
+    font-size: 3.3em;
+}
+
+.lbtn.lbtn-google .logo:before {
+    color: #ea4335;
+}
+
+.lbtn.lbtn-google.white .logo:before {
+    color: #ffffff;
+}

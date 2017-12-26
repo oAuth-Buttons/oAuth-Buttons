@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-kakao {
+    color: #3c1e1e;
+    background-color: #ffeb00;
+    border-color: #e5d419;
+}
+.lbtn.lbtn-kakao.white {
+    color: #3c1e1e;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-kakao .logo:before {
+    content: "\e908";
+}

@@ -1,0 +1,17 @@
+/* theme */
+.lbtn.lbtn-linkedin {
+    color: #ffffff;
+    background-color: #0077b5;
+    border-color: #116ea0;
+}
+
+.lbtn.lbtn-linkedin.white {
+    color: #0077b5;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-linkedin .logo:before {
+    content: "\e909";
+}

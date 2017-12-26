@@ -1,0 +1,25 @@
+/* theme */
+.lbtn.lbtn-discord {
+    color: #ffffff;
+    background-color: #7289DA;
+    border-color: #8392c7;
+}
+.lbtn.lbtn-discord.white {
+    color: #7289DA;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-discord .logo:before {
+    content: "\e900";
+    font-size: 3.5em;
+}
+
+.lbtn.lbtn-discord .logo:before {
+    color: #7289da;
+}
+
+.lbtn.lbtn-discord.white .logo:before {
+    color: #ffffff;
+}

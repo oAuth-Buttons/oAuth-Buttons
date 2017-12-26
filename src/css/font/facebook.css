@@ -1,0 +1,16 @@
+/* theme */
+.lbtn.lbtn-facebook {
+    color: #ffffff;
+    background-color: #3c5a99;
+    border-color: #516184;
+}
+.lbtn.lbtn-facebook.white {
+    color: #3c5a99;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-facebook .logo:before {
+    content: "\e901";
+}
