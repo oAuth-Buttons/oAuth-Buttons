@@ -20,23 +20,9 @@ module.exports = (grunt) => {
                 sourceMap: true
             },
             svg: {
-                src: ['src/css/main.css', 'src/css/svg/*.css'],
+                src: ['src/css/main.css', 'src/css/list/*.css'],
                 dest: 'dist/css/oauth-buttons.css'
-            },
-            font: {
-                src: ['src/css/main.font.css', 'src/css/font/*.css'],
-                dest: 'dist/css/oauth-buttons-font.css'
             }
-        },
-        copy: {
-            fonts: {
-              files: [{
-                    expand: true,
-                    cwd: 'src/fonts',
-                    src: '*',
-                    dest: 'dist/fonts',
-                }],
-            },
         },
         svgo: {
             svgo: {
@@ -58,8 +44,8 @@ module.exports = (grunt) => {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/logo',
-                    src: ['*.svg'],
+                    cwd: 'dist/logo',
+                    src: ['*.svg','!*_solid.svg'],
                     dest: 'dist/logo'
                 }]
             }
@@ -68,9 +54,8 @@ module.exports = (grunt) => {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-svgo');
     grunt.loadNpmTasks('grunt-convert-svg-to-png');
 
-    grunt.registerTask('default', ['concat', 'copy', 'svgo', 'convert-svg-to-png', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'svgo', 'convert-svg-to-png', 'cssmin']);
 }
