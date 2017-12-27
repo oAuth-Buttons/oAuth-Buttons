@@ -1,6 +1,6 @@
 {
   "name": "oauth-buttons",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "oAuth 서비스들의 로그인 버튼들입니다.",
   "main": "dist/js/oauth-buttons.min.js",
   "scripts": {
@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/RanolP/oAuth-Buttons.git"
   },
-  "author": "Ranol",
+  "author": "RanolP <asdhugh1@gmail.com>",
+  "contributors": [
+    "RanolP <asdhugh1@gmail.com>",
+    "small-sunshines <jioo0224@naver.com> (https://mori.space/)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RanolP/oAuth-Buttons/issues"
