@@ -1,0 +1,20 @@
+/* theme */
+.lbtn.lbtn-wordpress {
+    color: #ffffff;
+    background-color: #494541;
+    border-color: #564432;
+}
+
+.lbtn.lbtn-wordpress.white {
+    color: #494541;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-wordpress .logo {
+    background: url(../logo/wordpress.svg);
+}
+.lbtn.lbtn-wordpress.lbtn-fallback-svg .logo {
+    background: url(../logo/wordpress.png);
+}
