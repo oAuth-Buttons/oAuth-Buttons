@@ -53,7 +53,7 @@ oauth-buttons.min.css와 로고가 정상적으로 참조되었다면 당신은 
 
 ## Authors
 
-* **small_sunshine** - *CSS, JS, 빌드 시스템* - [small-sunshines](small-sunshines)
+* **small_sunshine** - *CSS, JS, 빌드 시스템* - [small-sunshines](https://github.com/small-sunshines)
 * **Ranol** - *로고, 브랜드 컬러 제공 및 총괄* - [RanolP](https://github.com/RanolP)
 
 [기여자 목록](https://github.com/RanolP/oAuth-Buttons/contributors)에서 더 많은 기여자들을 확인하세요.
