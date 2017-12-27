@@ -59,11 +59,6 @@ module.exports = (grunt) => {
                 files: {
                     'dist/js/oauth-buttons.js': 'src/js/oauth-buttons.js'
                 }
-            },
-            modernizr: {
-                files: {
-                    'dist/js/modernizr-oauth-buttons.min.js': 'src/js/modernizr-oauth-buttons.min.js'
-                }
             }
         },
         uglify: {
@@ -77,7 +72,7 @@ module.exports = (grunt) => {
                     src: ['*.js','!*.min.js'],
                     dest: 'dist/js',
                     ext: '.min.js'
-                  }]
+                }]
             }
         }
     });
