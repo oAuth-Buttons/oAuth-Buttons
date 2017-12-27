@@ -1,5 +1,9 @@
 # oAuth Buttons
 
+[![npm version](https://badge.fury.io/js/oauth-buttons.svg)](https://badge.fury.io/js/oauth-buttons)
+
+[![NPM](https://nodei.co/npm/oauth-buttons.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/oauth-buttons/)
+
 oAuth 서비스들의 로그인 버튼들입니다.
 
 ## 무엇이 안에 있나요?
