@@ -1,0 +1,19 @@
+/* theme */
+.lbtn.lbtn-pinterest {
+    color: #ffffff;
+    background-color: #BD081C;
+    border-color: #ab1b2c;
+}
+.lbtn.lbtn-pinterest.white {
+    color: #BD081C;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-pinterest .logo {
+    background: url(../logo/pinterest.svg);
+}
+.lbtn.lbtn-pinterest.lbtn-fallback-svg .logo {
+    background: url(../logo/pinterest.png);
+}

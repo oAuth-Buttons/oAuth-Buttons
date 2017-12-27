@@ -1,0 +1,19 @@
+/* theme */
+.lbtn.lbtn-twitch {
+    color: #ffffff;
+    background-color: #6441A4;
+    border-color: #6a588d;
+}
+.lbtn.lbtn-twitch.white {
+    color: #6441A4;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-twitch .logo {
+    background: url(../logo/twitch.svg);
+}
+.lbtn.lbtn-twitch.lbtn-fallback-svg .logo {
+    background: url(../logo/twitch.png);
+}

@@ -12,5 +12,8 @@
 
 /* logo */
 .lbtn.lbtn-steam .logo {
-    -webkit-mask: url(../logo/steam.svg) no-repeat center;
+    background: url(../logo/steam.svg);
+}
+.lbtn.lbtn-steam.lbtn-fallback-svg .logo {
+    background: url(../logo/steam.png);
 }

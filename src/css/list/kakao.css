@@ -12,5 +12,13 @@
 
 /* logo */
 .lbtn.lbtn-kakao .logo {
-    -webkit-mask: url(../logo/kakao.svg) no-repeat center;
+    background: url(../logo/kakao.svg);
+}
+.lbtn.lbtn-kakao.lbtn-fallback-svg .logo {
+    background: url(../logo/kakao.png);
+}
+
+/* filter cancel */
+.lbtn:not(.white).lbtn-kakao .logo{
+    filter: none;
 }
