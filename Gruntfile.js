@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 module.exports = (grunt) => {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -74,6 +76,25 @@ module.exports = (grunt) => {
                     ext: '.min.js'
                 }]
             }
+        },
+        add_comment: {
+            comment: {
+                options: {
+                    comments: ['These sources are distributed and available under the MIT License.', 'See LICENSE for details.', 'Build date: ' + moment().format("dddd, MMMM Do YYYY, h:mm:ss a")],
+                    carriageReturn: "\n",
+                    prepend: true,
+                    syntaxes: {
+                        '.js': '//',
+                        '.css': ['/*', '*/']
+                    }
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'dist',
+                    src: ['**/*.js', '**/*.css'],
+                    dest: 'dist'
+                }]
+            }
         }
     });
 
@@ -83,6 +104,7 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-convert-svg-to-png');
     grunt.loadNpmTasks('grunt-babel');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-add-comment');
 
-    grunt.registerTask('default', ['concat', 'babel', 'svgo', 'convert-svg-to-png', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['concat', 'babel', 'svgo', 'convert-svg-to-png', 'cssmin', 'uglify', 'add_comment']);
 }
