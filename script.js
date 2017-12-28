@@ -52,6 +52,10 @@ window.onload = function () {
 				case 'white':
 					btn.classList.add('white')
 					break
+				case 'flat-white':
+					btn.classList.add('lbtn-flat')
+					btn.classList.add('white')
+					break
 				default: break
 			}
 		}
