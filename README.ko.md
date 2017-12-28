@@ -8,7 +8,7 @@ oAuth 서비스들의 로그인 버튼들입니다.
 
 ## Getting Started
 
-dist 폴더를 복사하여 당신의 웹 서버에서 접근 가능하게 만든 후 oauth-buttons.min.css를 당신의 웹 페이지에 연결하세요. 버튼 디자인 스펙은 example 폴더 내부를 보면 알 수 있습니다.
+dist 폴더를 복사하여 당신의 웹 서버에서 접근 가능하게 만든 후 oauth-buttons.min.css를 당신의 웹 페이지에 연결하세요. 버튼 디자인 스펙은 example 폴더 내부를 보면 알 수 있습니다. 버튼이 어떻게 생겼는지 보고 싶다면 [프리뷰 페이지](https://ranolp.github.io/oAuth-Buttons)를 확인하세요.
 
 만약 직접 빌드하기를 원할 경우 아래의 가이드를 참고하세요.
 
