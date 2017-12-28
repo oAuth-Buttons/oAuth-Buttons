@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div:not(#contents) {
+    margin: 10px;
+}
+
+select {
+    height: 32px;
+    width: 200px;
+    color: black;
+    font-family: '나눔바른고딕', 'NanumBarunGothic', 'Roboto', sans-serif;
+}
+
+p.label, select {
+    text-transform: capitalize;
+}
+
+.lbtn.logo-only .label {
+    display: none;
+}

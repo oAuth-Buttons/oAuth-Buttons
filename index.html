@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>oAuth Buttons Preview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/oauth-buttons.css">
+    <!--[if lte IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script src="dist/js/oauth-buttons.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header></header>
+    <div id="contents">
+        <div id="preamble">
+            본 사이트는 oAuth Buttons 의 프리뷰를 보여주기 위한 사이트입니다.
+        </div>
+        <div>
+            <label for="button-styles">
+                Button Styles
+            </label>
+            <select id="button-styles" type="label">
+                <option selected>none</option>
+                <option>flat</option>
+                <option>white</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="service-list">
+                Service
+            </label>
+            <select id="service-list" type="label">
+            </select>
+        </div>
+
+        <div>
+            <label for="length">
+                Length
+            </label>
+            <select id="length" type="label">
+                <option>long</option>
+                <option selected>none</option>
+                <option>short</option>
+                <option>logo-only</option>
+            </select>
+        </div>
+        <div>
+            <div class="lbtn">
+                <i class="logo"></i>
+                <p class="label">
+                    Discord 아이디로 로그인
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
