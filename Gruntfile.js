@@ -24,6 +24,11 @@ module.exports = (grunt) => {
             svg: {
                 src: ['src/css/main.css', 'src/css/list/*.css'],
                 dest: 'dist/css/oauth-buttons.css'
+            },
+            js: {
+                src: ['src/js/class.js', 'src/js/getByClassName.js', 'src/js/ready.js',
+                    'src/js/modenizer.oauth-buttons.js', 'src/js/oauth-buttons.js'],
+                dest: 'dist/js/oauth-buttons.js'
             }
         },
         svgo: {
@@ -59,7 +64,12 @@ module.exports = (grunt) => {
             },
             js: {
                 files: {
-                    'dist/js/oauth-buttons.js': 'src/js/oauth-buttons.js'
+                    'dist/js/oauth-buttons.js': 'dist/js/oauth-buttons.js'
+                }
+            },
+            script: {
+                files: {
+                    'script.js': 'src/js/script.js'
                 }
             }
         },

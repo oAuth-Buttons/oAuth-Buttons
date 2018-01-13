@@ -1,27 +1,46 @@
-let services = [
+var services = [
 	'naver', 'google', 'kakao', 'facebook', 'twitter',
 	'github', 'discord', 'steam', 'slack', 'linkedin',
-	'instagram', 'twitch', 'pinterest', 'wordpress'
+	'instagram', 'twitch', 'pinterest', 'wordpress', 'telegram'
 ]
 
+var styles = [
+	'none', 'flat', 'white', 'flat-white'
+]
+
+// css filter detect
+if (!Modernizr_oauth_buttons.cssfilters) {
+	styles.shift()
+	styles.shift()
+}
+
 window.onload = function () {
-	let list = document.getElementById('service-list')
-	let currentService = services[0]
+	var list = document.getElementById('service-list')
+	var currentService = services[0]
 
-	let btn = document.getElementsByClassName('lbtn')[0]
-	let label = document.getElementsByClassName('label')[0]
+	var btn = document.getElementsByClassName('lbtn')[0]
+	var label = document.getElementsByClassName('label')[0]
 
-	let flatElem = document.getElementById('flat-button')
+	var flatElem = document.getElementById('flat-button')
 
-	let buttonStyles = document.getElementById('button-styles')
-	let lengthElem = document.getElementById('length')
+	var buttonStyles = document.getElementById('button-styles')
+	var lengthElem = document.getElementById('length')
 
-	let currentLength = 'none'
+	var currentLength = 'none'
 
-	for (service of services) {
-		let optionElem = document.createElement('option')
-		optionElem.innerText = service
+	for (var service in services) {
+		var optionElem = document.createElement('option')
+		optionElem.innerText = services[service]
 		list.appendChild(optionElem)
+	}
+
+	for (var style in styles) {
+		var optionElem = document.createElement('option')
+		optionElem.innerText = styles[style]
+		if(style == 0) {
+			optionElem.setAttribute('selected', '')
+		}
+		buttonStyles.appendChild(optionElem)
 	}
 
 	list.onchange = function () {
@@ -34,15 +53,15 @@ window.onload = function () {
 		updateButton({ length: true })
 	}
 
-	function updateButton({ service, style, length } = { service: false, style: false, length: false }) {
-		let updateLabel
-		if (service) {
-			btn.classList.remove(`lbtn-${currentService}`)
+	function updateButton(arg) {
+		var updateLabel
+		if (arg.service) {
+			btn.classList.remove('lbtn-' + currentService)
 			currentService = list.value
-			btn.classList.add(`lbtn-${currentService}`)
+			btn.classList.add('lbtn-' + currentService)
 			updateLabel = true
 		}
-		if (style) {
+		if (arg.style) {
 			btn.classList.remove('lbtn-flat')
 			btn.classList.remove('white')
 			switch (buttonStyles.value) {
@@ -59,7 +78,7 @@ window.onload = function () {
 				default: break
 			}
 		}
-		if (length) {
+		if (arg.length) {
 			btn.classList.remove('long')
 			btn.classList.remove('short')
 			btn.classList.remove('logo-only')
@@ -69,14 +88,14 @@ window.onload = function () {
 				btn.classList.add(currentLength)
 			}
 
-			updateLabel = true
+			var updateLabel = true
 		}
 
-		if (!!updateLabel) {
+		if (updateLabel) {
 			switch (currentLength) {
 				case 'long':
 				case 'none':
-					label.innerText = `${currentService} 아이디로 로그인`
+					label.innerText = currentService + '아이디로 로그인'
 					break
 				case 'short':
 					label.innerText = '로그인'
