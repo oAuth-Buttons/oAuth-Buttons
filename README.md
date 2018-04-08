@@ -1,6 +1,7 @@
 # oAuth-Buttons
 
 [![npm version](https://badge.fury.io/js/oauth-buttons.svg)](https://badge.fury.io/js/oauth-buttons)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons?ref=badge_shield)
 
 [![NPM](https://nodei.co/npm/oauth-buttons.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/oauth-buttons/)
 
@@ -66,10 +67,12 @@ See also the list of [contributors](https://github.com/RanolP/oAuth-Buttons/cont
 
 This project licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons?ref=badge_large)
+
 ## Acknowledgments
 
 * This project uses svg, If your browser can't support svg, It can't render normally.
 * Indirectly, We supports png rendering. If you applies dedicated script, It replaces SVG to PNG if browsers that don't support SVG.
 * This project works on most browsers. However, Some browsers won't work.
 * The translation may not be correct.
-
