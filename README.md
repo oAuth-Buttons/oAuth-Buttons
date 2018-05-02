@@ -10,8 +10,7 @@ The login buttons for oAuth services
 
 ## Getting Started
 
-Copy 'dist' folder and make it accessible on your web server. After that, link 'oauth-buttons.min.css' on your web page. The design spec of button is in the 'example' folder. If you want to see the design of button, check out the [Preview Page](https://ranolp.github.io/oAuth-Buttons).
-The current preview page is under construction.
+Copy 'dist' folder and make it accessible on your web server. After that, link 'oauth-buttons.min.css' on your web page. The design spec of button is in the 'example' folder. If you want to see the design of button, check out the [Preview Page](https://small-sunshines.github.io/oAuth-Buttons/).
 
 If you want to build directly. Refer to below guides.
 
