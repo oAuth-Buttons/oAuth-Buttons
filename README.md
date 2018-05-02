@@ -1,7 +1,8 @@
 # oAuth-Buttons
 
 [![npm version](https://badge.fury.io/js/oauth-buttons.svg)](https://badge.fury.io/js/oauth-buttons)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons?ref=badge_shield)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons?ref=badge_shield)
 
 [![NPM](https://nodei.co/npm/oauth-buttons.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/oauth-buttons/)
 
@@ -10,6 +11,7 @@ The login buttons for oAuth services
 ## Getting Started
 
 Copy 'dist' folder and make it accessible on your web server. After that, link 'oauth-buttons.min.css' on your web page. The design spec of button is in the 'example' folder. If you want to see the design of button, check out the [Preview Page](https://ranolp.github.io/oAuth-Buttons).
+The current preview page is under construction.
 
 If you want to build directly. Refer to below guides.
 
@@ -54,21 +56,21 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer 2.0.0](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/RanolP/oAuth-Buttons/tags).
+We use [SemVer 2.0.0](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/small-sunshines/oAuth-Buttons/tags).
 
 ## Authors
 
 * **small_sunshine** - *CSS, JS, build system* - [small-sunshines](https://github.com/small-sunshines)
 * **Ranol** - *Provides logo and brand color, the owner.* - [RanolP](https://github.com/RanolP)
 
-See also the list of [contributors](https://github.com/RanolP/oAuth-Buttons/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/small-sunshines/oAuth-Buttons/contributors) who participated in this project.
 
 ## License
 
 This project licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FRanolP%2FoAuth-Buttons?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons?ref=badge_large)
 
 ## Acknowledgments
 
