@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/oauth-buttons.svg)](https://badge.fury.io/js/oauth-buttons)
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FoAuth-Buttons%2FoAuth-Buttons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FoAuth-Buttons%2FoAuth-Buttons?ref=badge_shield)
 
 
 [![NPM](https://nodei.co/npm/oauth-buttons.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/oauth-buttons/)
@@ -11,7 +11,7 @@ oAuth 서비스들의 로그인 버튼들입니다.
 
 ## Getting Started
 
-dist 폴더를 복사하여 당신의 웹 서버에서 접근 가능하게 만든 후 oauth-buttons.min.css를 당신의 웹 페이지에 연결하세요. 버튼 디자인 스펙은 example 폴더 내부를 보면 알 수 있습니다. 버튼이 어떻게 생겼는지 보고 싶다면 [프리뷰 페이지](https://small-sunshines.github.io/oAuth-Buttons/)를 확인하세요.
+dist 폴더를 복사하여 당신의 웹 서버에서 접근 가능하게 만든 후 oauth-buttons.min.css를 당신의 웹 페이지에 연결하세요. 버튼 디자인 스펙은 example 폴더 내부를 보면 알 수 있습니다. 버튼이 어떻게 생겼는지 보고 싶다면 [프리뷰 페이지](https://oauth-buttons.github.io/oAuth-Buttons/)를 확인하세요.
 
 만약 직접 빌드하기를 원할 경우 아래의 가이드를 참고하세요.
 
@@ -70,7 +70,7 @@ oauth-buttons.min.css와 로고가 정상적으로 참조되었다면 당신은 
 이 프로젝트는 MIT 라이선스로 관리됩니다. - [라이선스](LICENSE) 파일에서 자세한 사항을 확인하세요.
 
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsmall-sunshines%2FoAuth-Buttons?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FoAuth-Buttons%2FoAuth-Buttons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FoAuth-Buttons%2FoAuth-Buttons?ref=badge_large)
 
 ## Acknowledgments
 
