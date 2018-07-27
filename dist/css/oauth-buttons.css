@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.lbtn {
+    flex-direction: row;
+    font-size: 14pt;
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    height: 64px;
+    flex: initial;
+    font-family: '\B098\B214\BC14\B978\ACE0\B515   Bold', 'Roboto', sans-serif;
+    margin: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.lbtn.lbtn-flat {
+    border-radius: 2px;
+    flex-direction: row;
+    font-family: '\B098\B214\BC14\B978\ACE0\B515   Bold', 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+.lbtn.short {
+    width: 150px;
+}
+
+.lbtn.long {
+    width: 450px;
+}
+
+.lbtn .logo {
+    width: 64px;
+    flex: initial;
+    display: flex;
+    position: relative;
+    background-color: inherit;
+}
+
+.lbtn .label {
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid;
+    display: flex;
+    border-color: inherit;
+}
+
+.lbtn.lbtn-flat .label {
+    border-left: none;
+}
+
+.lbtn.logo-only {
+    width: 64px;
+}
+
+.lbtn:not(.white) .logo{
+    filter: brightness(0%) invert(100%);
+}
+
+/*# sourceMappingURL=oauth-buttons.css.map*/

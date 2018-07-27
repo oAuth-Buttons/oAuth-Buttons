@@ -1,7 +1,8 @@
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const CssEntryPlugin = require('css-entry-webpack-plugin')
+const WebpackCleanPlugin = require('webpack-clean')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -9,7 +10,8 @@ module.exports = {
   entry: {
     'oauth-buttons.js': './src/js/oauth-buttons.js',
     'oauth-buttons.min.js': './src/js/oauth-buttons.js',
-    'oauth-buttons.css': './src/css/main.css'
+    'oauth-buttons.css': './src/css/main.css',
+    'oauth-buttons.min.css': './src/css/main.css'
   },
   devtool: 'source-map',
   output: {
@@ -26,22 +28,41 @@ module.exports = {
       test: /\.modernizrrc\.js$/
     }, {
       test: /\.css$/,
-      use: 'css-loader'
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
     }]
   },
   plugins: [
-    new CssEntryPlugin({
-      output: {
-        filename: '[name]'
-      }
-    })
+    new MiniCssExtractPlugin({
+      filename: 'css/[name]'
+    }),
+    new WebpackCleanPlugin([
+      'dist/js/oauth-buttons.css',
+      'dist/js/oauth-buttons.css.map',
+      'dist/js/oauth-buttons.min.css',
+      'dist/js/oauth-buttons.min.css.map'
+    ])
   ],
   optimization: {
     minimize: true,
-    minimizer: [new UglifyJsPlugin({
-      include: /\.min\.js$/,
-      sourceMap: true
-    })],
+    minimizer: [
+      new UglifyJsPlugin({
+        include: /\.min\.js$/,
+        sourceMap: true
+      }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /css\/oauth-buttons\.min\.css/g,
+        cssProcessorOptions: {
+          map: {
+            inline: false,
+            annotation: true,
+          }
+        },
+        canPrint: true
+      })
+    ],
     concatenateModules: true
   },
   resolve: {
