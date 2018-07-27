@@ -12,8 +12,5 @@
 
 /* logo */
 .lbtn.lbtn-discord .logo {
-    background: url(../logo/discord.svg);
-}
-.lbtn.lbtn-discord.lbtn-fallback-svg .logo {
-    background: url(../logo/discord.png);
+    font-icon: url(../../logo/discord.svg);
 }

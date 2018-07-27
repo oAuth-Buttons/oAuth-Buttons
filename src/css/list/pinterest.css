@@ -12,8 +12,5 @@
 
 /* logo */
 .lbtn.lbtn-pinterest .logo {
-    background: url(../logo/pinterest.svg);
-}
-.lbtn.lbtn-pinterest.lbtn-fallback-svg .logo {
-    background: url(../logo/pinterest.png);
+    font-icon: url(../../logo/pinterest.svg);
 }

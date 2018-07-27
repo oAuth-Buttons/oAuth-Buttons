@@ -61,5 +61,262 @@
 .lbtn:not(.white) .logo{
     filter: brightness(0%) invert(100%);
 }
+/* theme */
+.lbtn.lbtn-discord {
+    color: #ffffff;
+    background-color: #7289DA;
+    border-color: #8392c7;
+}
+.lbtn.lbtn-discord.white {
+    color: #7289DA;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-discord .logo {
+    background: url(210fdf13110732d425711c0102a01255.svg);
+}
+/* theme */
+.lbtn.lbtn-facebook {
+    color: #ffffff;
+    background-color: #3c5a99;
+    border-color: #516184;
+}
+.lbtn.lbtn-facebook.white {
+    color: #3c5a99;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-facebook .logo {
+    background: url(38762db8789e11ba29d6c1178710f4f9.svg);
+}
+/* theme */
+.lbtn.lbtn-github {
+    color: #ffffff;
+    background-color: #1a1414;
+    border-color: #181516;
+}
+.lbtn.lbtn-github.white {
+    color: #1a1414;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-github .logo {
+    background: url(497ff0668a9f8688d93a5f1cce910bed.svg);
+}
+/* theme */
+.lbtn.lbtn-google {
+    color: #ffffff;
+    background-color: #ea4335;
+    border-color: #d3554a;
+}
+.lbtn.lbtn-google.white {
+    color: #ea4335;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-google .logo {
+    background: url(f031c9e18f786daf326ce59ca2f6d194.svg);
+}
+/* theme */
+.lbtn.lbtn-instagram {
+    color: #ffffff;
+    background-color: #e53c5c;
+    border-color: #ce536a;
+}
+
+.lbtn.lbtn-instagram.white {
+    color: #e53c5c;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-instagram .logo {
+    background: url(5c8a5c6fe17e31d89b8abf26c7da122b.svg);
+}
+/* theme */
+.lbtn.lbtn-kakao {
+    color: #3c1e1e;
+    background-color: #ffeb00;
+    border-color: #e5d419;
+}
+.lbtn.lbtn-kakao.white {
+    color: #3c1e1e;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-kakao .logo {
+    background: url(e70f88fa01a498b033ac795f13ab2f17.svg);
+}
+
+/* filter cancel */
+.lbtn:not(.white).lbtn-kakao .logo{
+    filter: none;
+}
+/* theme */
+.lbtn.lbtn-linkedin {
+    color: #ffffff;
+    background-color: #0077b5;
+    border-color: #116ea0;
+}
+
+.lbtn.lbtn-linkedin.white {
+    color: #0077b5;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-linkedin .logo {
+    background: url(32852418b8b733abfdfdc9303c7af685.svg);
+}
+/* theme */
+.lbtn.lbtn-naver {
+    color: #ffffff;
+    background-color: #1ec800;
+    border-color: #29a011;
+}
+
+.lbtn.lbtn-naver.white {
+    color: #1ec800;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+.lbtn.lbtn-naver.white .label {
+    color: #999;
+    border-color: inherit;
+}
+
+/* logo */
+.lbtn.lbtn-naver .logo {
+    background: url(982f174fb3eccbc6bd36b5f60166a0da.svg);
+}
+/* theme */
+.lbtn.lbtn-pinterest {
+    color: #ffffff;
+    background-color: #BD081C;
+    border-color: #ab1b2c;
+}
+.lbtn.lbtn-pinterest.white {
+    color: #BD081C;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-pinterest .logo {
+    background: url(455d860f3bf1fdb1d3fd047ed78647a3.svg);
+}
+/* theme */
+.lbtn.lbtn-slack {
+    color: #ffffff;
+    background-color: #78D4B6;
+    border-color: #89c2af;
+}
+
+.lbtn.lbtn-slack.white {
+    color: #78D4B6;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-slack .logo {
+    background: url(40185ba3ab2c047c1fed324860aeca36.svg);
+}
+/* theme */
+.lbtn.lbtn-steam {
+    color: #ffffff;
+    background-color: #221e1f;
+    border-color: #212121;
+}
+.lbtn.lbtn-steam.white {
+    color: #221e1f;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-steam .logo {
+    background: url(7bb223e725a5ed77403b03c94c5b2eac.svg);
+}
+/* theme */
+.lbtn.lbtn-telegram {
+    color: #ffffff;
+    background-color: #37AEE2;
+    border-color: #4da5cb;
+}
+.lbtn.lbtn-telegram.white {
+    color: #37AEE2;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-telegram .logo {
+    background: url(9c55690bd7068f705d8241ee26af2f74.svg);
+}
+.lbtn.lbtn-telegram:not(.white) .logo {
+    filter: none;
+}
+/* theme */
+.lbtn.lbtn-twitch {
+    color: #ffffff;
+    background-color: #6441A4;
+    border-color: #6a588d;
+}
+.lbtn.lbtn-twitch.white {
+    color: #6441A4;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-twitch .logo {
+    background: url(10d61ebc7c5c1474cc4440a40bc63933.svg);
+}
+/* theme */
+.lbtn.lbtn-twitter {
+    color: #ffffff;
+    background-color: #1da1f2;
+    border-color: #349ad9;
+}
+.lbtn.lbtn-twitter.white {
+    color: #1da1f2;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-twitter .logo {
+    background: url(94ed9f6b63e8d27454b87b53ce5b56a6.svg);
+}
+/* theme */
+.lbtn.lbtn-wordpress {
+    color: #ffffff;
+    background-color: #494541;
+    border-color: #564432;
+}
+
+.lbtn.lbtn-wordpress.white {
+    color: #494541;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+/* logo */
+.lbtn.lbtn-wordpress .logo {
+    background: url(0b48bae2ba667647f874afaf8d7c5dad.svg);
+}
 
 /*# sourceMappingURL=oauth-buttons.css.map*/

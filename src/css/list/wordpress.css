@@ -13,8 +13,5 @@
 
 /* logo */
 .lbtn.lbtn-wordpress .logo {
-    background: url(../logo/wordpress.svg);
-}
-.lbtn.lbtn-wordpress.lbtn-fallback-svg .logo {
-    background: url(../logo/wordpress.png);
+    font-icon: url(../../logo/wordpress.svg);
 }

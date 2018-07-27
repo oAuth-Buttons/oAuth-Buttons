@@ -12,8 +12,5 @@
 
 /* logo */
 .lbtn.lbtn-twitch .logo {
-    background: url(../logo/twitch.svg);
-}
-.lbtn.lbtn-twitch.lbtn-fallback-svg .logo {
-    background: url(../logo/twitch.png);
+    font-icon: url(../../logo/twitch.svg);
 }

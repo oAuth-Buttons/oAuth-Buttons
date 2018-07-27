@@ -4,7 +4,7 @@
   "description": "oAuth 서비스들의 로그인 버튼들입니다.",
   "main": "dist/js/oauth-buttons.min.js",
   "scripts": {
-    "build": "grunt --force"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,12 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.0",
+    "glob": "^7.1.2",
+    "iconfont-webpack-plugin": "^3.0.0",
     "mini-css-extract-plugin": "^0.4.1",
     "modernizr": "^3.6.0",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "postcss-loader": "^2.1.6",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.2",
     "webpack-clean": "^1.2.2",

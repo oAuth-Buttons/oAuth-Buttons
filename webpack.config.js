@@ -3,15 +3,21 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const WebpackCleanPlugin = require('webpack-clean')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const IconfontWebpackPlugin = require('iconfont-webpack-plugin')
+const glob = require('glob')
 const path = require('path')
+
+const css = ['./src/css/main.css']
+
+Array.prototype.push.apply(css, glob.sync('./src/css/list/*.css'))
 
 module.exports = {
   mode: 'development',
   entry: {
     'oauth-buttons.js': './src/js/oauth-buttons.js',
     'oauth-buttons.min.js': './src/js/oauth-buttons.js',
-    'oauth-buttons.css': './src/css/main.css',
-    'oauth-buttons.min.css': './src/css/main.css'
+    'oauth-buttons.css': css,
+    'oauth-buttons.min.css': css
   },
   devtool: 'source-map',
   output: {
@@ -30,7 +36,15 @@ module.exports = {
       test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: (loader) => [
+                new IconfontWebpackPlugin(loader)
+              ]
+            }
+          }
         ]
     }]
   },
