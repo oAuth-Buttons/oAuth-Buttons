@@ -12,6 +12,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-linkedin .logo {
+.lbtn.lbtn-linkedin .logo::before {
     font-icon: url(../../logo/linkedin.svg);
 }

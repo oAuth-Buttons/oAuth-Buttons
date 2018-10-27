@@ -12,6 +12,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-slack .logo {
+.lbtn.lbtn-slack .logo::before {
     font-icon: url(../../logo/slack.svg);
 }

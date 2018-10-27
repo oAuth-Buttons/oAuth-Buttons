@@ -11,6 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-facebook .logo {
+.lbtn.lbtn-facebook .logo::before {
     font-icon: url(../../logo/facebook.svg);
 }

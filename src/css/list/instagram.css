@@ -12,6 +12,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-instagram .logo {
+.lbtn.lbtn-instagram .logo::before {
     font-icon: url(../../logo/instagram.svg);
 }

@@ -11,6 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-pinterest .logo {
+.lbtn.lbtn-pinterest .logo::before {
     font-icon: url(../../logo/pinterest.svg);
 }

@@ -11,6 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-twitter .logo {
+.lbtn.lbtn-twitter .logo::before {
     font-icon: url(../../logo/twitter.svg);
 }

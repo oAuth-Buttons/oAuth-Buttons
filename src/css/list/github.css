@@ -11,6 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-github .logo {
+.lbtn.lbtn-github .logo::before {
     font-icon: url(../../logo/github.svg);
 }

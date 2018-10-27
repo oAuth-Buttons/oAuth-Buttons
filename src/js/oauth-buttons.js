@@ -1,11 +1,13 @@
 import { addClass } from './class'
-import './getByClassName'
+import getElementsByClassName from './getByClassName'
 import * as modenizr from 'modernizr'
 
 ready(() => {
   // css filter detect
   if (!modenizr.cssfilters) {
-    const el = document.getElementsByClassName('lbtn');
+    const el = !(document.getElementsByClassName ?
+      document.getElementsByClassName :
+      getElementsByClassName)('lbtn');
     for(let i = 0; i < el.length; i++) {
       addClass(el[i], 'white')
     }
@@ -16,7 +18,9 @@ ready(() => {
 
   // svg detect
   if (!modenizr.svg) {
-    const el = document.getElementsByClassName('lbtn');
+    const el = !(document.getElementsByClassName ?
+      document.getElementsByClassName :
+      getElementsByClassName)('lbtn');
     for(let i = 0; i < el.length; i++) {
       addClass(el[i], 'lbtn-fallback-svg')
     }

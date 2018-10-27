@@ -12,6 +12,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-wordpress .logo {
+.lbtn.lbtn-wordpress .logo::before {
     font-icon: url(../../logo/wordpress.svg);
 }

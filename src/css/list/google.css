@@ -11,6 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-google .logo {
+.lbtn.lbtn-google .logo::before {
     font-icon: url(../../logo/google.svg);
 }

@@ -11,6 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-steam .logo {
+.lbtn.lbtn-steam .logo::before {
     font-icon: url(../../logo/steam.svg);
 }

@@ -1,4 +1,4 @@
-export function getByClassName () {
+export default function getByClassName () {
     if (!document.getElementsByClassName) {
         document.getElementsByClassName = function(search) {
             var d = document, elements, pattern, i, results = [];

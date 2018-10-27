@@ -11,9 +11,6 @@
 }
 
 /* logo */
-.lbtn.lbtn-telegram .logo {
+.lbtn.lbtn-telegram .logo::before {
     font-icon: url(../../logo/telegram.svg);
-}
-.lbtn.lbtn-telegram:not(.white) .logo {
-    filter: none;
 }
