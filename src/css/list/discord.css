@@ -14,3 +14,7 @@
 .lbtn.lbtn-discord .logo::before {
     font-icon: url(../../logo/discord.svg);
 }
+
+.lbtn.lbtn-discord.white .logo {
+    color: #7289DA
+}

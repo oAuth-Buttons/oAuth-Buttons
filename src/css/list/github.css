@@ -14,3 +14,7 @@
 .lbtn.lbtn-github .logo::before {
     font-icon: url(../../logo/github.svg);
 }
+
+.lbtn.lbtn-github.white .logo {
+    color: #1a1414;
+}

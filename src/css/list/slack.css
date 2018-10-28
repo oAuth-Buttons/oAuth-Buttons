@@ -15,3 +15,7 @@
 .lbtn.lbtn-slack .logo::before {
     font-icon: url(../../logo/slack.svg);
 }
+
+.lbtn.lbtn-slack.white .logo {
+    color: #78D4B6;
+}

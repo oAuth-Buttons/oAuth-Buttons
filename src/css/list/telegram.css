@@ -14,3 +14,7 @@
 .lbtn.lbtn-telegram .logo::before {
     font-icon: url(../../logo/telegram.svg);
 }
+
+.lbtn.lbtn-telegram.white .logo {
+    color: #37AEE2;
+}

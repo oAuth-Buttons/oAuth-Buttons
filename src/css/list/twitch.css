@@ -14,3 +14,7 @@
 .lbtn.lbtn-twitch .logo::before {
     font-icon: url(../../logo/twitch.svg);
 }
+
+.lbtn.lbtn-twitch.white .logo {
+    color: #6441A4;
+}

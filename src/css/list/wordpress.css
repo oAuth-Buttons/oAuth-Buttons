@@ -15,3 +15,7 @@
 .lbtn.lbtn-wordpress .logo::before {
     font-icon: url(../../logo/wordpress.svg);
 }
+
+.lbtn.lbtn-wordpress.white .logo {
+    color: #494541;
+}

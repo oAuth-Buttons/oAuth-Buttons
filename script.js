@@ -95,7 +95,7 @@ window.onload = function () {
 			switch (currentLength) {
 				case 'long':
 				case 'none':
-					label.innerText = currentService + '아이디로 로그인'
+					label.innerText = currentService + ' 아이디로 로그인'
 					break
 				case 'short':
 					label.innerText = '로그인'

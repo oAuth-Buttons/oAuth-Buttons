@@ -19,3 +19,7 @@
 .lbtn.lbtn-naver .logo::before {
     font-icon: url(../../logo/naver.svg);
 }
+
+.lbtn.lbtn-naver.white .logo {
+    color: #1ec800;
+}

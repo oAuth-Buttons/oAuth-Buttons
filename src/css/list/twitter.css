@@ -14,3 +14,7 @@
 .lbtn.lbtn-twitter .logo::before {
     font-icon: url(../../logo/twitter.svg);
 }
+
+.lbtn.lbtn-twitter.white .logo {
+    color: #1da1f2;
+}

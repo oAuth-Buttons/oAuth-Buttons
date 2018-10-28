@@ -14,30 +14,24 @@ Array.prototype.push.apply(css, glob.sync('./src/css/list/*.css'))
 module.exports = {
   mode: 'development',
   entry: {
-    'oauth-buttons.js': './src/js/oauth-buttons.js',
-    'oauth-buttons.min.js': './src/js/oauth-buttons.js',
     'oauth-buttons.css': css,
     'oauth-buttons.min.css': css
   },
-  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name]'
+    filename: 'build/[name]'
   },
   module: {
     rules: [{
-      test: /\.js$/,
-      loader: 'babel-loader',
-      exclude: /(node_modules)/
-    }, {
-      loader: 'webpack-modernizr-loader',
-      test: /\.modernizrrc\.js$/
-    }, {
       test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
           {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          }, {
             loader: 'postcss-loader',
             options: {
               plugins: (loader) => [
@@ -50,22 +44,16 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name]'
+      filename: '[name]'
     }),
     new WebpackCleanPlugin([
-      'dist/js/oauth-buttons.css',
-      'dist/js/oauth-buttons.css.map',
-      'dist/js/oauth-buttons.min.css',
-      'dist/js/oauth-buttons.min.css.map'
+      'dist/build/oauth-buttons.css',
+      'dist/build/oauth-buttons.min.css',
     ])
   ],
   optimization: {
     minimize: true,
     minimizer: [
-      new UglifyJsPlugin({
-        include: /\.min\.js$/,
-        sourceMap: true
-      }),
       new OptimizeCssAssetsPlugin({
         assetNameRegExp: /css\/oauth-buttons\.min\.css/g,
         cssProcessorOptions: {
@@ -80,9 +68,6 @@ module.exports = {
     concatenateModules: true
   },
   resolve: {
-    modules: ['node_modules'],
-    alias: {
-      modernizr$: path.resolve(__dirname, ".modernizrrc.js")
-    }
+    modules: ['node_modules']
   }
 }

@@ -15,3 +15,7 @@
 .lbtn.lbtn-instagram .logo::before {
     font-icon: url(../../logo/instagram.svg);
 }
+
+.lbtn.lbtn.lbtn-instagram.white .logo {
+    color: #e53c5c;
+}

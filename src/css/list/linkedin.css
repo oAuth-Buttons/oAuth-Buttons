@@ -15,3 +15,7 @@
 .lbtn.lbtn-linkedin .logo::before {
     font-icon: url(../../logo/linkedin.svg);
 }
+
+.lbtn.lbtn-linkedin.white .logo {
+    color: #0077b5;
+}

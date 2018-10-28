@@ -14,3 +14,7 @@
 .lbtn.lbtn-steam .logo::before {
     font-icon: url(../../logo/steam.svg);
 }
+
+.lbtn.lbtn-steam.white .logo {
+    color: #221e1f;
+}

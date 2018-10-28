@@ -14,3 +14,7 @@
 .lbtn.lbtn-pinterest .logo::before {
     font-icon: url(../../logo/pinterest.svg);
 }
+
+.lbtn.lbtn-pinterest.white .logo {
+    color: #BD081C;
+}

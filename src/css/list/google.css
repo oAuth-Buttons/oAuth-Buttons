@@ -14,3 +14,7 @@
 .lbtn.lbtn-google .logo::before {
     font-icon: url(../../logo/google.svg);
 }
+
+.lbtn.lbtn-google.white .logo {
+    color: #ea4335;
+}
