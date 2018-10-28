@@ -11,14 +11,14 @@
 }
 
 /* logo */
-.lbtn.lbtn-kakao .logo {
-    background: url(../logo/kakao.svg);
-}
-.lbtn.lbtn-kakao.lbtn-fallback-svg .logo {
-    background: url(../logo/kakao.png);
+.lbtn.lbtn-kakao .logo::before {
+    font-icon: url(../../logo/kakao.svg);
 }
 
-/* filter cancel */
-.lbtn:not(.white).lbtn-kakao .logo{
-    filter: none;
+.lbtn.lbtn-kakao .logo {
+    color: #3c1e1e;
+}
+
+.lbtn.lbtn.lbtn-kakao.white .logo {
+    color: #3c1e1e;
 }

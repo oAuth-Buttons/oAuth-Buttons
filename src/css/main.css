@@ -13,6 +13,7 @@
     font-family: '나눔바른고딕 Bold', 'Roboto', sans-serif;
     margin: 10px;
     width: 300px;
+    cursor: pointer;
 }
 
 .lbtn.lbtn-flat {
@@ -35,7 +36,18 @@
     flex: initial;
     display: flex;
     position: relative;
-    background-color: inherit;
+    color: white;
+    font-style: normal;
+}
+
+.lbtn.white .logo {
+    color: gray;
+}
+
+.lbtn .logo::before {
+    font-size: 3em;
+    align-self: center;
+    margin: auto;
 }
 
 .lbtn .label {
@@ -55,8 +67,4 @@
 
 .lbtn.logo-only {
     width: 64px;
-}
-
-.lbtn:not(.white) .logo{
-    filter: brightness(0%) invert(100%);
 }

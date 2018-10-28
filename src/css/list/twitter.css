@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-twitter .logo {
-    background: url(../logo/twitter.svg);
+.lbtn.lbtn-twitter .logo::before {
+    font-icon: url(../../logo/twitter.svg);
 }
-.lbtn.lbtn-twitter.lbtn-fallback-svg .logo {
-    background: url(../logo/twitter.png);
+
+.lbtn.lbtn-twitter.white .logo {
+    color: #1da1f2;
 }

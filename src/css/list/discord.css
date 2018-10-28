@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-discord .logo {
-    background: url(../logo/discord.svg);
+.lbtn.lbtn-discord .logo::before {
+    font-icon: url(../../logo/discord.svg);
 }
-.lbtn.lbtn-discord.lbtn-fallback-svg .logo {
-    background: url(../logo/discord.png);
+
+.lbtn.lbtn-discord.white .logo {
+    color: #7289DA
 }

@@ -16,9 +16,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-naver .logo {
-    background: url(../logo/naver.svg);
+.lbtn.lbtn-naver .logo::before {
+    font-icon: url(../../logo/naver.svg);
 }
-.lbtn.lbtn-naver.lbtn-fallback-svg .logo {
-    background: url(../logo/naver.png);
+
+.lbtn.lbtn-naver.white .logo {
+    color: #1ec800;
 }

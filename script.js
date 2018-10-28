@@ -9,10 +9,10 @@ var styles = [
 ]
 
 // css filter detect
-if (!Modernizr_oauth_buttons.cssfilters) {
+/*if (!Modernizr_oauth_buttons.cssfilters) {
 	styles.shift()
 	styles.shift()
-}
+}*/
 
 window.onload = function () {
 	var list = document.getElementById('service-list')
@@ -95,7 +95,7 @@ window.onload = function () {
 			switch (currentLength) {
 				case 'long':
 				case 'none':
-					label.innerText = currentService + '아이디로 로그인'
+					label.innerText = currentService + ' 아이디로 로그인'
 					break
 				case 'short':
 					label.innerText = '로그인'

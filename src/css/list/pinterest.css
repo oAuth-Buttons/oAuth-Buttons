@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-pinterest .logo {
-    background: url(../logo/pinterest.svg);
+.lbtn.lbtn-pinterest .logo::before {
+    font-icon: url(../../logo/pinterest.svg);
 }
-.lbtn.lbtn-pinterest.lbtn-fallback-svg .logo {
-    background: url(../logo/pinterest.png);
+
+.lbtn.lbtn-pinterest.white .logo {
+    color: #BD081C;
 }

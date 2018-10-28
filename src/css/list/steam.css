@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-steam .logo {
-    background: url(../logo/steam.svg);
+.lbtn.lbtn-steam .logo::before {
+    font-icon: url(../../logo/steam.svg);
 }
-.lbtn.lbtn-steam.lbtn-fallback-svg .logo {
-    background: url(../logo/steam.png);
+
+.lbtn.lbtn-steam.white .logo {
+    color: #221e1f;
 }

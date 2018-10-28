@@ -1,5 +1,5 @@
 <svg id="google" 
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" height="35">
     <path class="logo" fill="#4285f4" d="M26.64,18.2a10.34,10.34,0,0,0-.16-1.84H18v3.48h4.84A4.14,4.14,0,0,1,21,22.56v2.26H24a8.78,8.78,0,0,0,2.68-6.62Z"/>
     <path class="bottom logo" fill="#34a853" d="M18,27a8.59,8.59,0,0,0,6-2.18L21,22.56A5.43,5.43,0,0,1,13,19.71H10V22a9,9,0,0,0,8,5Z"/>
     <path class="left logo" fill="#fbbc05" d="M13,19.71a5.32,5.32,0,0,1,0-3.42V14H10A9,9,0,0,0,10,22l3-2.33Z"/>

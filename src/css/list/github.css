@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-github .logo {
-    background: url(../logo/github.svg);
+.lbtn.lbtn-github .logo::before {
+    font-icon: url(../../logo/github.svg);
 }
-.lbtn.lbtn-github.lbtn-fallback-svg .logo {
-    background: url(../logo/github.png);
+
+.lbtn.lbtn-github.white .logo {
+    color: #1a1414;
 }

@@ -12,9 +12,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-linkedin .logo {
-    background: url(../logo/linkedin.svg);
+.lbtn.lbtn-linkedin .logo::before {
+    font-icon: url(../../logo/linkedin.svg);
 }
-.lbtn.lbtn-linkedin.lbtn-fallback-svg .logo {
-    background: url(../logo/linkedin.png);
+
+.lbtn.lbtn-linkedin.white .logo {
+    color: #0077b5;
 }

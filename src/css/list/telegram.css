@@ -11,12 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-telegram .logo {
-    background: url(../logo/telegram.svg);
+.lbtn.lbtn-telegram .logo::before {
+    font-icon: url(../../logo/telegram.svg);
 }
-.lbtn.lbtn-telegram.lbtn-fallback-svg .logo {
-    background: url(../logo/telegram.png);
-}
-.lbtn.lbtn-telegram:not(.white) .logo {
-    filter: none;
+
+.lbtn.lbtn-telegram.white .logo {
+    color: #37AEE2;
 }

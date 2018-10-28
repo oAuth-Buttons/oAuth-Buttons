@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-twitch .logo {
-    background: url(../logo/twitch.svg);
+.lbtn.lbtn-twitch .logo::before {
+    font-icon: url(../../logo/twitch.svg);
 }
-.lbtn.lbtn-twitch.lbtn-fallback-svg .logo {
-    background: url(../logo/twitch.png);
+
+.lbtn.lbtn-twitch.white .logo {
+    color: #6441A4;
 }

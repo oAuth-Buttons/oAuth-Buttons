@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-google .logo {
-    background: url(../logo/google.svg);
+.lbtn.lbtn-google .logo::before {
+    font-icon: url(../../logo/google.svg);
 }
-.lbtn.lbtn-google.lbtn-fallback-svg .logo {
-    background: url(../logo/google.png);
+
+.lbtn.lbtn-google.white .logo {
+    color: #ea4335;
 }

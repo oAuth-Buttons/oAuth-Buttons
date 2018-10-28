@@ -12,9 +12,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-wordpress .logo {
-    background: url(../logo/wordpress.svg);
+.lbtn.lbtn-wordpress .logo::before {
+    font-icon: url(../../logo/wordpress.svg);
 }
-.lbtn.lbtn-wordpress.lbtn-fallback-svg .logo {
-    background: url(../logo/wordpress.png);
+
+.lbtn.lbtn-wordpress.white .logo {
+    color: #494541;
 }

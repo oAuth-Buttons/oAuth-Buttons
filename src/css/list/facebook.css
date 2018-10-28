@@ -11,9 +11,10 @@
 }
 
 /* logo */
-.lbtn.lbtn-facebook .logo {
-    background: url(../logo/facebook.svg);
+.lbtn.lbtn-facebook .logo::before {
+    font-icon: url(../../logo/facebook.svg);
 }
-.lbtn.lbtn-facebook.lbtn-fallback-svg .logo {
-    background: url(../logo/facebook.png);
+
+.lbtn.lbtn-facebook.white .logo {
+    color: #3c5a99;
 }
