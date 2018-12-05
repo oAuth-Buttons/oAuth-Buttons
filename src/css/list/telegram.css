@@ -13,6 +13,7 @@
 /* logo */
 .lbtn.lbtn-telegram .logo::before {
     font-icon: url(../../logo/telegram.svg);
+    font-size: 2em;
 }
 
 .lbtn.lbtn-telegram.white .logo {

@@ -1,6 +1,4 @@
-const webpack = require('webpack')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const WebpackCleanPlugin = require('webpack-clean')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const IconfontWebpackPlugin = require('iconfont-webpack-plugin')
@@ -17,9 +15,10 @@ module.exports = {
     'oauth-buttons.css': css,
     'oauth-buttons.min.css': css
   },
+  devtool: 'nosources-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'build/[name]'
+    filename: '../build/[name]'
   },
   module: {
     rules: [{
@@ -47,15 +46,17 @@ module.exports = {
       filename: '[name]'
     }),
     new WebpackCleanPlugin([
-      'dist/build/oauth-buttons.css',
-      'dist/build/oauth-buttons.min.css',
+      'build/oauth-buttons.css',
+      'build/oauth-buttons.css.map',
+      'build/oauth-buttons.min.css',
+      'build/oauth-buttons.min.css.map'
     ])
   ],
   optimization: {
     minimize: true,
     minimizer: [
       new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /css\/oauth-buttons\.min\.css/g,
+        assetNameRegExp: /oauth-buttons\.min\.css/,
         cssProcessorOptions: {
           map: {
             inline: false,
