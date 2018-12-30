@@ -70,8 +70,9 @@ module.exports = (grunt) => {
           relativeFontPath: '../fonts',
           engine: 'node',
           fontFamilyName: 'oAuth-Buttons',
-          htmlDemo: true,
-          codepointsFile: 'codepoints.json'
+          htmlDemo: false,
+          codepointsFile: 'codepoints.json',
+          autoHint: false
         }
       }
     }
@@ -82,5 +83,5 @@ module.exports = (grunt) => {
   grunt.loadNpmTasks('grunt-add-comment')
   grunt.loadNpmTasks('grunt-webfont')
 
-  grunt.registerTask('default', [/*'webfont', */'concat', 'cssmin', 'add_comment'])
+  grunt.registerTask('default', ['webfont', 'concat', 'cssmin', 'add_comment'])
 }
