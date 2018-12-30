@@ -12,7 +12,7 @@
 
 /* logo */
 .lbtn.lbtn-telegram .logo::before {
-    font-icon: url(../../logo/telegram.svg);
+    content: "\E00C";
     font-size: 2em;
 }
 

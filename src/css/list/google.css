@@ -12,7 +12,7 @@
 
 /* logo */
 .lbtn.lbtn-google .logo::before {
-    font-icon: url(../../logo/google.svg);
+    content: "\E004";
 }
 
 .lbtn.lbtn-google.white .logo {

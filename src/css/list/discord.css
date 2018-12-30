@@ -12,7 +12,7 @@
 
 /* logo */
 .lbtn.lbtn-discord .logo::before {
-    font-icon: url(../../logo/discord.svg);
+    content: "\E001";
 }
 
 .lbtn.lbtn-discord.white .logo {

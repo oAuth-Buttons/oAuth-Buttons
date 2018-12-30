@@ -12,7 +12,7 @@
 
 /* logo */
 .lbtn.lbtn-pinterest .logo::before {
-    font-icon: url(../../logo/pinterest.svg);
+    content: "\E009";
 }
 
 .lbtn.lbtn-pinterest.white .logo {

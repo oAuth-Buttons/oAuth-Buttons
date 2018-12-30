@@ -13,7 +13,7 @@
 
 /* logo */
 .lbtn.lbtn-slack .logo::before {
-    font-icon: url(../../logo/slack.svg);
+    content: "\E00A";
 }
 
 .lbtn.lbtn-slack.white .logo {

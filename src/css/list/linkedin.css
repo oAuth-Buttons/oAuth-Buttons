@@ -13,7 +13,7 @@
 
 /* logo */
 .lbtn.lbtn-linkedin .logo::before {
-    font-icon: url(../../logo/linkedin.svg);
+    content: "\E007";
 }
 
 .lbtn.lbtn-linkedin.white .logo {

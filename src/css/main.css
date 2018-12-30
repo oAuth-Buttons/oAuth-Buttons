@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "oAuth-Buttons";
+    src:url('../fonts/oAuth-Buttons.eot');
+	src:url('../fonts/oAuth-Buttons.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oAuth-Buttons.woff') format('woff'),
+	url('../fonts/oAuth-Buttons.ttf') format('truetype'),
+	url('../fonts/oAuth-Buttons.svg') format('svg');
+}
+
 .lbtn {
     flex-direction: row;
     font-size: 14pt;

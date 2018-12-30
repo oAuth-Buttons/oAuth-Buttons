@@ -13,7 +13,7 @@
 
 /* logo */
 .lbtn.lbtn-wordpress .logo::before {
-    font-icon: url(../../logo/wordpress.svg);
+    content: "\E00F";
 }
 
 .lbtn.lbtn-wordpress.white .logo {

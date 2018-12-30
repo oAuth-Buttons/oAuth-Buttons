@@ -17,7 +17,8 @@
 
 /* logo */
 .lbtn.lbtn-naver .logo::before {
-    font-icon: url(../../logo/naver.svg);
+    font-family: "oAuth-Buttons";
+    content: "\E008";
 }
 
 .lbtn.lbtn-naver.white .logo {

@@ -13,7 +13,7 @@
 
 /* logo */
 .lbtn.lbtn-instagram .logo::before {
-    font-icon: url(../../logo/instagram.svg);
+    content: "\E005";
 }
 
 .lbtn.lbtn.lbtn-instagram.white .logo {

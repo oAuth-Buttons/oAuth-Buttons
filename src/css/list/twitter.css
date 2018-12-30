@@ -12,7 +12,7 @@
 
 /* logo */
 .lbtn.lbtn-twitter .logo::before {
-    font-icon: url(../../logo/twitter.svg);
+    content: "\E00E";
 }
 
 .lbtn.lbtn-twitter.white .logo {

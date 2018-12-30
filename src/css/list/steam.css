@@ -12,7 +12,7 @@
 
 /* logo */
 .lbtn.lbtn-steam .logo::before {
-    font-icon: url(../../logo/steam.svg);
+    content: "\E00B";
 }
 
 .lbtn.lbtn-steam.white .logo {
