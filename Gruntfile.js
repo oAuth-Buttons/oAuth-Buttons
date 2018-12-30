@@ -26,16 +26,6 @@ module.exports = (grunt) => {
         dest: 'dist/css/oauth-buttons.css'
       }
     },
-    svgo: {
-      svgo: {
-        files: [{
-          expand: true,
-          cwd: 'src/logo',
-          src: ['*.svg','!*_solid.svg'],
-          dest: 'dist/logo'
-        }]
-      }
-    },
     add_comment: {
       comment: {
         options: {
@@ -70,7 +60,7 @@ module.exports = (grunt) => {
           relativeFontPath: '../fonts',
           engine: 'node',
           fontFamilyName: 'oAuth-Buttons',
-          htmlDemo: false,
+          htmlDemo: true,
           codepointsFile: 'codepoints.json',
           autoHint: false
         }
@@ -83,5 +73,10 @@ module.exports = (grunt) => {
   grunt.loadNpmTasks('grunt-add-comment')
   grunt.loadNpmTasks('grunt-webfont')
 
-  grunt.registerTask('default', ['webfont', 'concat', 'cssmin', 'add_comment'])
+  grunt.registerTask('default', [
+    'webfont',
+    'concat',
+    'cssmin',
+    'add_comment'
+  ])
 }

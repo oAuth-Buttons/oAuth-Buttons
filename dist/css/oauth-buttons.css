@@ -1,6 +1,6 @@
 /* These sources are distributed and available under the MIT License. */
 /* See LICENSE for details. */
-/* Build date: Sunday, December 30th 2018, 4:59:07 pm */
+/* Build date: Sunday, December 30th 2018, 5:18:06 pm */
 @font-face {
     font-family: "oAuth-Buttons";
     src:url('../fonts/oAuth-Buttons.eot');
@@ -59,6 +59,7 @@
     align-self: center;
     margin: auto;
     color: white;
+    font-family: "oAuth-Buttons";
 }
 
 .lbtn .label {
@@ -244,7 +245,6 @@
 
 /* logo */
 .lbtn.lbtn-naver .logo::before {
-    font-family: "oAuth-Buttons";
     content: "\E008";
 }
 

@@ -56,6 +56,7 @@
     align-self: center;
     margin: auto;
     color: white;
+    font-family: "oAuth-Buttons";
 }
 
 .lbtn .label {
