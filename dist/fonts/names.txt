@@ -1,0 +1,15 @@
+discord
+facebook
+github
+google
+instagram
+kakao
+linkedin
+naver
+pinterest
+slack
+steam
+telegram
+twitch
+twitter
+wordpress

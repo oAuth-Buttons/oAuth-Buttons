@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const WebpackCleanPlugin = require('webpack-clean')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const IconfontWebpackPlugin = require('iconfont-webpack-plugin')
+const WebpackIconfontPluginNodejs = require('webpack-iconfont-plugin-nodejs')
 const glob = require('glob')
 const path = require('path')
 
@@ -18,7 +18,7 @@ module.exports = {
     'oauth-buttons.min.css': css
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist', 'css'),
     filename: 'build/[name]'
   },
   module: {
@@ -32,17 +32,20 @@ module.exports = {
               importLoaders: 1
             }
           }, {
-            loader: 'postcss-loader',
-            options: {
-              plugins: (loader) => [
-                new IconfontWebpackPlugin(loader)
-              ]
-            }
+            loader: 'postcss-loader'
           }
         ]
     }]
   },
   plugins: [
+    new WebpackIconfontPluginNodejs({
+      fontName: 'oauth-buttons',
+      cssPrefix: 'icon',
+      svgs: path.join(__dirname, 'src', 'logo', '*.svg'),
+      fontsOutput: path.join(__dirname, 'dist', 'fonts'),
+      cssOutput: path.join(__dirname, 'dist', 'fonts', 'font.css'),
+      namesOutput: path.join(__dirname, 'dist', 'fonts', 'names.txt')
+    }),
     new MiniCssExtractPlugin({
       filename: '[name]'
     }),

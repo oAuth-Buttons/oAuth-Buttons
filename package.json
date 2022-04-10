@@ -1,19 +1,19 @@
 {
   "name": "oauth-buttons",
-  "version": "1.1.4",
-  "description": "oAuth 서비스들의 로그인 버튼들입니다.",
+  "version": "1.1.5",
+  "description": "login buttons with OAuth providers",
   "main": "dist/js/oauth-buttons.min.js",
   "scripts": {
-    "build": "webpack"
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oAuth-Buttons/oAuth-Buttons.git"
   },
-  "author": "small-sunshines <jioo0224@naver.com> (https://mori.space/)",
+  "author": "small-sunshines <jioo0224@naver.com>",
   "contributors": [
     "RanolP <asdhugh1@gmail.com>",
-    "small-sunshines <jioo0224@naver.com> (https://mori.space/)"
+    "small-sunshines <jioo0224@naver.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -21,21 +21,21 @@
   },
   "homepage": "https://github.com/oAuth-Buttons/oAuth-Buttons#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "babel-loader": "^8.0.4",
+    "@babel/core": "^7.17.9",
+    "babel-loader": "^8.2.4",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^1.0.0",
-    "glob": "^7.1.3",
-    "iconfont-webpack-plugin": "^3.0.1",
-    "mini-css-extract-plugin": "^0.4.4",
-    "modernizr": "^3.6.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "postcss-loader": "^3.0.0",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.23.1",
-    "webpack-clean": "^1.2.3",
-    "webpack-cli": "^3.1.2",
-    "webpack-modernizr-loader": "^4.0.1"
+    "css-loader": "^6.7.1",
+    "glob": "^7.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "modernizr": "^3.12.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^6.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.72.0",
+    "webpack-clean": "^1.2.5",
+    "webpack-cli": "^4.9.2",
+    "webpack-modernizr-loader": "^5.0.0",
+    "webpack-iconfont-plugin-nodejs": "^1.0.22"
   },
   "dependencies": {}
 }

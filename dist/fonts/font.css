@@ -1,0 +1,79 @@
+@font-face {
+    font-family: oauth-buttons;
+    src: url("oauth-buttons.eot");src: url("oauth-buttons.eot?40185ed8#iefix") format("embedded-opentype"),
+             url("oauth-buttons.woff2?40185ed8") format("woff2"),
+             url("oauth-buttons.woff?40185ed8") format("woff"),
+             url("oauth-buttons.ttf?40185ed8") format("truetype"),
+             url("oauth-buttons.svg?40185ed8#oauth-buttons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon"], [class*=" icon"] {
+    font-family: 'oauth-buttons' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+}
+
+
+.icon-discord::before {
+    content: "\ea01";
+}
+
+.icon-facebook::before {
+    content: "\ea02";
+}
+
+.icon-github::before {
+    content: "\ea03";
+}
+
+.icon-google::before {
+    content: "\ea04";
+}
+
+.icon-instagram::before {
+    content: "\ea05";
+}
+
+.icon-kakao::before {
+    content: "\ea06";
+}
+
+.icon-linkedin::before {
+    content: "\ea07";
+}
+
+.icon-naver::before {
+    content: "\ea08";
+}
+
+.icon-pinterest::before {
+    content: "\ea09";
+}
+
+.icon-slack::before {
+    content: "\ea0a";
+}
+
+.icon-steam::before {
+    content: "\ea0b";
+}
+
+.icon-telegram::before {
+    content: "\ea0c";
+}
+
+.icon-twitch::before {
+    content: "\ea0d";
+}
+
+.icon-twitter::before {
+    content: "\ea0e";
+}
+
+.icon-wordpress::before {
+    content: "\ea0f";
+}
+
